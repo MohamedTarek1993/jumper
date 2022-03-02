@@ -3,7 +3,7 @@
   --color-secound: #0c1321;
   --color-third: #1b312e;
   --color-fourth: #bf8c6d;
-  --color-fifth:#fff;
+  --color-fifth: #fff;
 }
 body.active-body {
   background: var(--color-secound);
@@ -14,54 +14,80 @@ body.active-body .navbar-nav .nav-link {
   color: var(--color-fifth) !important;
 }
 /* strat navbar */
-body.active-body .navbar{
-  background-color: var(--color-third);  
+body.active-body .navbar {
+  background-color: var(--color-third);
 }
-body.active-body .navbar .dropdown-lang .lang-menu .content h6, body.active-body .navbar .dropdown-lang .selected-lang .content h6{
-    color: var(--color-fifth);
+body.active-body .navbar .dropdown-lang .lang-menu .content h6,
+body.active-body .navbar .dropdown-lang .selected-lang .content h6 {
+  color: var(--color-fifth);
 }
-body.active-body .navbar .dropdown-lang{
-    border-color: var(--color-fifth);
+body.active-body .navbar .dropdown-lang {
+  border-color: var(--color-fifth);
 }
-body.active-body .navbar .dropdown-lang .lang-menu::after{
-    color: var(--color-fifth);
+body.active-body .navbar .dropdown-lang .lang-menu::after {
+  color: var(--color-fifth);
 }
-body.active-body .navbar .dropdown-lang .selected-lang{
-    border-color: var(--color-fifth);
-    background-color: var(--color-secound);
+body.active-body .navbar .dropdown-lang .selected-lang {
+  border-color: var(--color-fifth);
+  background-color: var(--color-secound);
 }
-body.active-body .navbar .btn-sign{
-    background-color: var(--color-fifth);
+body.active-body .navbar .btn-sign {
+  background-color: var(--color-fifth);
 }
-body.active-body .navbar .btn-sign:hover{
-    background-color: var(--color-fourth);
+body.active-body .navbar .btn-sign:hover {
+  background-color: var(--color-fourth);
 }
-body.active-body .navbar .btn-sign a{
-    color: var(--color-secound);
+body.active-body .navbar .btn-sign a {
+  color: var(--color-secound);
 }
-body.active-body .navbar .navbar-toggler{
-    border-color: white;
+body.active-body .navbar .navbar-toggler {
+  border-color: white;
 }
 body.active-body .navbar .navbar-toggler-icon,
 body.active-body .navbar .navbar-toggler-icon::before,
-body.active-body .navbar .navbar-toggler-icon::after{
-  background-color: var(--color-fifth) ;
-
+body.active-body .navbar .navbar-toggler-icon::after {
+  background-color: var(--color-fifth);
 }
 /* finish navbar */
 /* start login form */
-body.active-body .form-login .head h2 ,body.active-body .form-login .form .form-label ,body.active-body .form-login .form .forget a ,body.active-body .form-login .have-acc a{
+body.active-body .form-login .head h2,
+body.active-body .form-login .form .form-label,
+body.active-body .form-login .form .forget a,
+body.active-body .form-login .have-acc a {
   color: white;
 }
-body.active-body .form-login .head p{
+body.active-body .form-login .head p {
   color: var(--color-fifth);
 }
-body.active-body .form-login .form .btn-sign{
+body.active-body .form-login .form .btn-sign {
   background-color: white;
   color: var(--color-secound);
 }
-body.active-body .form-login .form .btn-sign:hover{
+body.active-body .form-login .form .btn-sign:hover {
   background-color: var(--color-fourth);
 }
 /* finish login form */
-
+/* start conform form */
+body.active-body .form .form-step-active {
+  background-color: var(--color-third);
+}
+body.active-body .form .form-step-active h6,
+body.active-body .form .form-step-active label,
+body.active-body .form .form-step-active .code .avtive,
+body.active-body .form .form-step-active p span {
+  color: white;
+}
+body.active-body .form .form-step-active .full .btn,body.active-body .form .form-step-active .btn {
+  background-color: white;
+  color: var(--color-secound);
+}
+body.active-body .form .form-step-active .full .btn:hover,body.active-body .form .form-step-active .btn:hover {
+  background-color: var(--color-fourth);
+}
+body.active-body .form .form-step-active .code div {
+  border-color: white;
+}
+body.active-body .form .form-step-active .code .avtive {
+  border-color: var(--color-fourth);
+}
+/* finish conform form */
