@@ -49,6 +49,14 @@ body.active-body .navbar .navbar-toggler-icon::after {
   background-color: var(--color-fifth);
 }
 /* finish navbar */
+/* start footer */
+body.active-body footer{
+  background-color: var(--color-third);
+}
+body.active-body footer a{
+  color: white;
+}
+/* finish footer */
 /* start login form */
 body.active-body .form-login .head h2,
 body.active-body .form-login .form .form-label,
@@ -77,11 +85,13 @@ body.active-body .form .form-step-active .code .avtive,
 body.active-body .form .form-step-active p span {
   color: white;
 }
-body.active-body .form .form-step-active .full .btn,body.active-body .form .form-step-active .btn {
+body.active-body .form .form-step-active .full .btn,
+body.active-body .form .form-step-active .btn {
   background-color: white;
   color: var(--color-secound);
 }
-body.active-body .form .form-step-active .full .btn:hover,body.active-body .form .form-step-active .btn:hover {
+body.active-body .form .form-step-active .full .btn:hover,
+body.active-body .form .form-step-active .btn:hover {
   background-color: var(--color-fourth);
 }
 body.active-body .form .form-step-active .code div {
@@ -91,3 +101,47 @@ body.active-body .form .form-step-active .code .avtive {
   border-color: var(--color-fourth);
 }
 /* finish conform form */
+/* start data complete */
+body.active-body .data-coplete-tab .nav-pills .head h2,
+body.active-body .data-coplete-tab .nav-pills .head p,
+body.active-body .data-coplete-tab .nav-pills .nav-link,
+body.active-body .data-coplete-tab .tab-content .first-tab h2,
+body.active-body .data-coplete-tab .kind .tab-content .form-label,
+body.active-body .data-coplete-tab .admin-responsable .form-label {
+  color: white;
+}
+body.active-body .data-coplete-tab .nav-pills .nav-link.active{
+  color: var(--color-fourth);
+}
+body.active-body .data-coplete-tab .tab-content .first-tab ,body.active-body .data-coplete-tab .admin-responsable{
+  background-color: var(--color-third);
+}
+body.active-body .data-coplete-tab .kind .nav-pills .nav-link{
+  background-color: var(--color-primary);
+}
+body.active-body .data-coplete-tab .kind .nav-pills .nav-link.avtive{
+  background-color: white;
+}
+body.active-body .data-coplete-tab .kind .tab-content .btn-sign ,body.active-body .data-coplete-tab .admin-responsable .btn-sign{
+  background-color: white;
+  color: var(--color-primary);
+}
+/* finish data complete */
+/* start navbar */
+body.active-body .sidebar{
+  background-color: var(--color-third);
+}
+body.active-body .sidebar header{
+  background-color: var(--color-primary);
+}
+body.active-body .sidebar header h6 ,body.active-body .sidebar header p ,body.active-body .sidebar .menu-side-bar .side-link,body.active-body .sidebar .menu-side-bar .dropdown-btn{
+  color: white;
+}
+body.active-body .sidebar .menu-side-bar .side-link.active,
+body.active-body .sidebar .menu-side-bar .dropdown-btn.active,
+body.active-body .sidebar .menu-side-bar .side-link:hover,
+body.active-body .sidebar .menu-side-bar .dropdown-btn:hover {
+  color: var(--color-fourth);
+}
+/* finish navbar */
+

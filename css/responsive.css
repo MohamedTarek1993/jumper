@@ -55,13 +55,66 @@
     top: 24%;
     left: 31%;
   }
-  .form .form-step-active .form-control{
+  .form .form-step-active .form-control {
     padding-right: 13%;
   }
-  .form .form-step-active .input-group .icons{
+  .form .form-step-active .input-group .icons {
     top: 13%;
   }
   /* finish conform form */
+  /* start data complete */
+  .data-coplete-tab .tab-content .first-tab h2 {
+    text-align: center;
+  }
+  .upl {
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-pic-div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+  #uploadBtn {
+    width: 44%;
+    bottom: -5px;
+    transform: translateX(-27%);
+  }
+  .data-coplete-tab .kind {
+    margin-top: 4%;
+  }
+  .form {
+    padding: 23px 10px;
+  }
+  .data-coplete-tab .nav-pills {
+    flex-direction: row !important;
+  }
+  .data-coplete-tab .nav-pills .nav-link {
+    width: 45%;
+  }
+  .data-coplete-tab .admin-responsable {
+    width: 100%;
+  }
+  .data-coplete-tab .admin-responsable h2 {
+    text-align: center;
+  }
+  /* finish data complete */
+  /* start footer */
+  footer ul,
+  footer .slug {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  footer .slug {
+    padding-bottom: 3%;
+  }
+  /* finish footer */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -84,6 +137,48 @@
     padding: 5px 0;
   }
   /* finish login form */
+  /* start data complete */
+  .upl {
+    height: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-pic-div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+  #uploadBtn {
+    width: 44%;
+    bottom: -5px;
+    transform: translateX(-27%);
+  }
+  #uploadBtn h6 {
+    margin-top: 4%;
+    padding-top: 2%;
+  }
+  .data-coplete-tab .tab-content .first-tab h2 {
+    text-align: center;
+  }
+  .form {
+    padding: 23px 10px;
+  }
+  .data-coplete-tab .admin-responsable {
+    width: 100%;
+  }
+  .data-coplete-tab .admin-responsable h2 {
+    text-align: center;
+  }
+  /* finish data complete */
+  /* footer */
+  footer .slug{
+    justify-content: center;
+  }
+  /* footer */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1023.98px) and (max-width: 1200px) {
@@ -95,4 +190,22 @@
     left: -28px;
   }
   /* finish navbar */
+  /* start data complete */
+  .profile-pic-div {
+    height: 118px;
+    width: 118px;
+    position: absolute;
+    top: 7%;
+    left: -34%;
+  }
+  #uploadBtn {
+    bottom: -180px;
+  }
+  #uploadBtn h6 {
+    padding-top: 5%;
+  }
+  .form {
+    padding: 21px 20px;
+  }
+  /* finish data complete */
 }
