@@ -74,7 +74,7 @@ ul {
 .form-control {
   border-radius: 8px !important;
   background-color: var(--color-fifth) !important;
-  padding-right: 7%;
+  padding-right: 9%;
   background-color: #f5f5f5 !important;
   color: var(--color-primary);
   font-family: 'regular';
@@ -82,7 +82,12 @@ ul {
 }
 .form-select {
   border-radius: 8px !important;
-  padding: 0.375rem 1.25rem 0.375rem 0.75rem;
+  padding: 0.375rem 2.25rem 0.375rem 1.40rem;
+  font-family: "regular";
+  background-color: #f5f5f5;
+  color: var(--color-primary);
+  background-position: left ;
+  position: relative;
 }
 .form-control:focus,
 .btn:focus,
@@ -102,8 +107,14 @@ select:focus {
 /* custom  */
 .icon {
   position: absolute;
-  top: 60%;
-  right: 2%;
+  top: 59%;
+  right: 1%;
+  z-index: 900;
+}
+.icont{
+  position: absolute;
+  top: 59%;
+    right: 51%;
   z-index: 900;
 }
 .icon i {
@@ -1190,3 +1201,7 @@ section .details span {
 }
 
 /* finish sidebar */
+
+.input-group.show-ginder{
+  display: none;
+}

@@ -206,15 +206,65 @@
                 <div class="col-lg-9 col-md-7 col-12">
                     <div class="content">
                         <form action="">
-                            <div class="row">
-                                <div class="col-lg-6 col-12">
-                                    <div class="input-group">
+                            <!-- first step -->
+                            <div class="form-step form-step-active ">
+                                <!-- start input group -->
+                                <div class="input-group">
+                                    <div class="col-lg-6 col-12">
                                         <label class="form-label" for="service">اسم الخدمة</label>
-                                        <input type="text" class="form-control"  id="service" >
+                                        <input type="text" class="form-control" id="service">
                                         <span class="icon"> <img src="image/img1.png" alt=""></span>
                                     </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label class="form-label" for="service"> عدد الجمبرز</label>
+                                        <input type="number" class="form-control" id="number">
+                                        <span class="icont"> <img src="image/img2.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <!-- finish input group -->
+                                <!-- start input group -->
+                                <div class="input-group">
+                                    <div class="col-lg-6 col-12">
+                                        <label class="form-label" for="service"> الجنسية</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>الجنسية</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <span class="icon"> <img src="image/img3.png" alt=""></span>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label class="form-label" for="service"> النوع</label>
+                                        <select   class="form-select" aria-label="Default select example">
+                                            <option selected>النوع </option>
+                                            <option value="1">ذكر</option>
+                                            <option value="2">أنثي</option>
+                                            <option onclick="selectOpt()" id="grnder"  value="3">ذكر وأنثي</option>
+                                        </select>
+                                        <span class="icont"> <img src="image/img4.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <!-- finish input group -->
+                                <!-- start input group -->
+                                <div class="input-group show-ginder" id=" showGinder">
+                                    <div class="col-lg-6 col-12">
+                                        <label class="form-label" for="service"> عدد الذكور</label>
+                                        <input type="number" class="form-control" id="number1">
+                                        <span class="icon"> <img src="image/male.png" alt=""></span>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <label class="form-label" for="service"> عدد الإناث</label>
+                                        <input type="number" class="form-control" id="number2">
+                                        <span class="icont"> <img src="image/female.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <!-- finish input group -->
+                                <div class="py-3 full text-center">
+                                    <a class="btn btn-next" href="#"> ارسال الرمز</a>
                                 </div>
                             </div>
+                            <!-- first step -->
                         </form>
                     </div>
                 </div>
@@ -258,6 +308,7 @@
     <!-- sweet alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- sweet alert -->
+    <!-- sidebar -->
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
@@ -274,6 +325,53 @@
                     //     { duration: 1500, fill: 'forwards' })
                 }
             });
+        }
+    </script>
+    <!-- sidebar -->
+    <!-- form withard -->
+    <script>
+        const prevBtns = document.querySelectorAll(".btn-prev");
+        const nextBtns = document.querySelectorAll(".btn-next");
+        const progress = document.getElementById("progress");
+        const formSteps = document.querySelectorAll(".form-step");
+        const progressSteps = document.querySelectorAll(".progress-step");
+
+        let formStepsNum = 0;
+
+        nextBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                formStepsNum++;
+                updateFormSteps();
+                // updateProgressbar();
+            });
+        });
+        prevBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                formStepsNum--;
+                updateFormSteps();
+                // updateProgressbar();
+            });
+        });
+        function updateFormSteps() {
+            formSteps.forEach((formStep) => {
+                formStep.classList.contains("form-step-active") &&
+                    formStep.classList.remove("form-step-active");
+            });
+
+            formSteps[formStepsNum].classList.add("form-step-active");
+        }
+
+    </script>
+    <!-- form withard -->
+    <script>
+        let inputs = document.getElementById('grnder');
+        let showGinder = document.getElementById('showGinder');
+
+        function selectOpt() {
+            if (inputs.value = 3) {
+                console.log('OOO')
+            showGinder.style.display ="block"
+            }
         }
     </script>
 </body>
