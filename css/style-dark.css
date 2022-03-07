@@ -15,25 +15,38 @@ body.active-body h2,
 body.active-body h6,
 body.active-body .navbar-nav .nav-link,
 body.active-body .head-categ,
-body.active-body .head-small {
+body.active-body .head-small,
+body.active-body .nav-link,
+body.active-body tbody,
+body.active-body td,
+body.active-body tfoot,
+body.active-body th,
+body.active-body thead,
+body.active-body tr {
   color: var(--color-fifth) !important;
 }
-body.active-body .first{
+body.active-body .nav-link.active {
+  color: var(--color-fourth) !important;
+}
+body.active-body  .page-item.active .page-link{
+  background-color: var(--color-fourth);
+}
+body.active-body .first {
   background-color: white;
   color: var(--color-third);
   border-color: var(--color-secound);
 }
-body.active-body .second{
-  background-color: #F24A4A;
+body.active-body .second {
+  background-color: #f24a4a;
   border-color: transparent;
 }
-body.active-body .first:hover{
+body.active-body .first:hover {
   background-color: var(--color-fourth);
   color: white;
 }
-body.active-body .second:hover{
+body.active-body .second:hover {
   background-color: white;
-  color: #F24A4A;
+  color: #f24a4a;
 }
 /* strat navbar */
 body.active-body .navbar {
@@ -172,14 +185,14 @@ body.active-body .sidebar .menu-side-bar .dropdown-btn:hover {
 }
 /* finish navbar */
 /* start show order  */
-body.active-body .order .show-order ,
+body.active-body .order .show-order,
 body.active-body .order .content {
   background-color: var(--color-third);
 }
-body.active-body .order .show-order .head .indection span{
+body.active-body .order .show-order .head .indection span {
   background-color: white;
 }
-body.active-body .order .show-order .work-detials li p span{
+body.active-body .order .show-order .work-detials li p span {
   color: white;
 }
 /* finish show order  */

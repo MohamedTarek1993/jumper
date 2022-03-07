@@ -213,7 +213,7 @@
                         <div class="head" data-aos="fade-up" data-aos-duration="1000">
                             <p>رقم الطلب : #2515441221</p>
                             <p>تاريخ الطلب : فبراير 22 - 2022</p>
-                            <div class="indection"> <span class="revision"> جاري المراجعة</span></div>
+                            <div class="indection"> <span class="pending"> فى انتظار الدفع</span></div>
                         </div>
                         <div class="content" data-aos="fade-up" data-aos-duration="1000">
                             <div class="header">
@@ -337,7 +337,7 @@
                                 شقة12</p>
                         </div>
                         <div class="candidates" data-aos="fade-up" data-aos-duration="1000">
-                            <ul class="nav nav-pills nav-cand mb-3" id="pills-tab" role="tablist">
+                            <ul class="nav nav-pills nav-pay nav-cand mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -354,9 +354,6 @@
                                         data-bs-target="#pills-contact" type="button" role="tab"
                                         aria-controls="pills-contact" aria-selected="false">المرفوضين
                                         (<span>180</span>)</button>
-                                </li>
-                                <li>
-                                    <button class="btn first">طلب المزيد</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
@@ -553,9 +550,16 @@
                                     </a>
                                 </li>
                             </ul>
+                            <p class="summary">عرض 7 من اصل 250 طلب</p>
                         </nav>
                         <!---------------------------- pagination ------------------------------->
-                      
+                        <div class="copy">
+                            <p>تم تحديد عدد 2 جمبرز</p>
+                            <div class="button">
+                                <button id="sweetalert" onclick="acceptAlert()" class="btn first">قبول</button>
+                                <button id="sweetalert" onclick="cancelAlert()" class="btn second">رفض</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -680,7 +684,42 @@
         };
     </script>
     <!-- sweet alert for favourit -->
-    
+      <!-- sweet alert for accept -->
+      <script>
+        function acceptAlert() {
+            Swal.fire({
+                title: 'Your order has been accept',
+                icon: 'success',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                },
+                showConfirmButton: false,
+                timer: 1500
+            })
+        };
+    </script>
+    <!-- sweet alert for accept -->
+      <!-- sweet alert for cancel -->
+      <script>
+        function cancelAlert() {
+            Swal.fire({
+                title: 'Your order has been canceled',
+                icon: 'error',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                },
+                showConfirmButton: false,
+                timer: 1500
+            })
+        };
+    </script>
+    <!-- sweet alert for cancel -->
 </body>
 
 </html>

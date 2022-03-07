@@ -142,6 +142,37 @@
     width: 74%;
     font-size: 13px;
   }
+  .candidates .nav-cand{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+  }
+  .candidates .nav-cand li:last-child{
+    margin-right: 0;
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  
+  .page-item .page-link{
+    font-size: 10px;
+  }
+  .modal-reject .button ,.modal-accept .button{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .modal-reject .button .btn ,.modal-accept .button .btn{
+    margin-bottom: 3%;
+  }
+  .modal-reject .modal-footer ,.modal-accept .modal-footer{
+    justify-content: center;
+  }
+  .order .show-order .summary{
+    left: 23%;
+    bottom: -1%;
+  }
   /* finish show order */
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -240,6 +271,16 @@
   .order .show-order .adress p{
     width: 89%;
   }
+  .candidates .nav-cand{
+    border-bottom: none;
+  }
+  .candidates .nav-cand li:last-child{
+    margin: 4% auto 2%;
+  }
+  .order .show-order .summary{
+    left: 27%;
+    bottom: -3%;
+  }
   /* finish show order */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -270,4 +311,35 @@
     padding: 21px 20px;
   }
   /* finish data complete */
+}
+@media(max-width: 1000px){
+/* responsive tabel */
+.tabel-cand thead{
+  display: none;
+}
+.tabel-cand, .tabel-cand tbody, .tabel-cand tr, .tabel-cand td{
+  display: block;
+  width: 100%;
+}
+.tabel-can tr{
+  margin-bottom:15px;
+}
+.tabel-can tbody td{
+  padding-left: 50%;
+  text-align: left;
+  position: relative;
+}
+.tabel-can tbody td:before{
+  content: attr(data-label);
+  position: absolute;
+  right:0;
+  width: 50%;
+  padding-right:15px;
+  font-size:20px;
+  text-align: right;
+}
+.tabel-cand tbody tr .case{
+  padding: 1% 4%;
+}
+  /* responsive tabel */
 }
