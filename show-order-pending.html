@@ -149,8 +149,8 @@
                                     حسابي
                                 </a>
                             </li>
-                            <li class="side-item  ">
-                                <button class="dropdown-btn btn actives ">
+                            <li class="side-item ">
+                                <button class="dropdown-btn btn actives">
                                     <i class="bi bi-view-list"></i>
                                     الطلبات
                                     <span>
@@ -213,7 +213,7 @@
                         <div class="head" data-aos="fade-up" data-aos-duration="1000">
                             <p>رقم الطلب : #2515441221</p>
                             <p>تاريخ الطلب : فبراير 22 - 2022</p>
-                            <div class="indection"> <span class="new">طلب جديد</span></div>
+                            <div class="indection  "> <span class="pending">طلب معلق </span></div>
                         </div>
                         <div class="content" data-aos="fade-up" data-aos-duration="1000">
                             <div class="header">
@@ -337,8 +337,9 @@
                                 شقة12</p>
                         </div>
                         <div class="button">
-                            <button onclick="cancelAlert()" id="sweetalert" class="btn  first">الغاء الطلب</button>
-
+                            <button class=" btn first" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">الغاء التعليق</button>
+                            <button onclick="cancelAlert()" id="sweetalert" class="btn  second">الغاء الطلب</button>
                         </div>
                     </div>
                 </div>
@@ -346,6 +347,33 @@
         </div>
     </section>
     <!---------------------- finish order -------------------------------------------->
+    <!-- model in cancel pending -->
+    <div class="modal fade modal-pending" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <lottie-player src="json/lf30_editor_z8wjogvb.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                        </lottie-player>
+                        <h6 class="head-categ">تم الغاء تعليق الطلب بنجاح</h6>
+                        <p>لقد قمت بإلغاء تعليق الطلب وسيتم عرضه على الادراة وسيتم الرد عليك
+                            من فضلك قم بمتابعة الاشعارات وتلقى عروض الجمبرز</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn second" data-bs-dismiss="modal">Close</button>
+                    <a type="button" href="show-order-new.html" class="btn first">عرض تفاصيل الطلب </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model in cancel pending -->
+
     <!---------------------- start footer -------------------------------------------->
     <footer>
         <div class="container">
@@ -382,6 +410,10 @@
     <!-- sweet alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- sweet alert -->
+    <!-- lootie -->
+    <script src="js/lottie.js"></script>
+    <!-- lootie -->
+
     <!-- sidebar -->
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
