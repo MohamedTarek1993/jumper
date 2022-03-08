@@ -8,9 +8,13 @@
 body.active-body {
   background: var(--color-secound);
 }
+body.active-body #toggle .light.active-light {
+  background: #0c1321;
+}
 body.active-body .container,
 body.active-body section,
 body.active-body p,
+body.active-body a,
 body.active-body h2,
 body.active-body h6,
 body.active-body .navbar-nav .nav-link,
@@ -22,13 +26,14 @@ body.active-body td,
 body.active-body tfoot,
 body.active-body th,
 body.active-body thead,
-body.active-body tr {
+body.active-body tr
+ {
   color: var(--color-fifth) !important;
 }
 body.active-body .nav-link.active {
   color: var(--color-fourth) !important;
 }
-body.active-body  .page-item.active .page-link{
+body.active-body .page-item.active .page-link {
   background-color: var(--color-fourth);
 }
 body.active-body .first {
@@ -196,3 +201,15 @@ body.active-body .order .show-order .work-detials li p span {
   color: white;
 }
 /* finish show order  */
+/* start rejected clerk page */
+body.active-body .clark-section{
+  background-color: var(--color-third);
+}
+body.active-body  .clark-section .skills .card  {
+  background-color: var(--color-primary);
+}
+body.active-body .clark-section .skills .card i{
+  background-color: var(--color-secound);
+  color: white;
+}
+/* finish rejected clerk page */

@@ -142,38 +142,69 @@
     width: 74%;
     font-size: 13px;
   }
-  .candidates .nav-cand{
+  .candidates .nav-cand {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-bottom: none;
   }
-  .candidates .nav-cand li:last-child{
+  .candidates .nav-cand li:last-child {
     margin-right: 0;
     margin-top: 2%;
     margin-bottom: 5%;
   }
-  
-  .page-item .page-link{
+
+  .page-item .page-link {
     font-size: 10px;
   }
-  .modal-reject .button ,.modal-accept .button{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  .modal-reject .button,
+  .modal-accept .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .modal-reject .button .btn ,.modal-accept .button .btn{
+  .modal-reject .button .btn,
+  .modal-accept .button .btn {
     margin-bottom: 3%;
   }
-  .modal-reject .modal-footer ,.modal-accept .modal-footer{
+  .modal-reject .modal-footer,
+  .modal-accept .modal-footer {
     justify-content: center;
   }
-  .order .show-order .summary{
+  .order .show-order .summary {
     left: 23%;
     bottom: -1%;
   }
   /* finish show order */
+  /* start rejected clerk page */
+  .clark-section .head {
+    flex-direction: column;
+  }
+  .clark-section .head .info {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .clark-section .head .button {
+    margin-top: 3%;
+    width: 70%;
+  }
+  .clark-section .head .info h6 {
+    font-size: 20px;
+  }
+
+  .clark-section .about p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .clark-section .skills .card {
+    margin-bottom: 3%;
+    padding: 3% 1%;
+  }
+  .clark-section .download .content p {
+    font-size: 11px;
+  }
+  /* finish rejected clerk page */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -239,49 +270,57 @@
   }
   /* footer */
   /* start show order */
-  .order .show-order .head p{
+  .order .show-order .head p {
     font-size: 11px;
     margin-right: 2%;
   }
-  .order .show-order .head .indection{
+  .order .show-order .head .indection {
     text-align: center;
   }
-  .order .show-order .content .header h6{
+  .order .show-order .content .header h6 {
     font-size: 15px;
   }
-  .order .show-order .work-detials ul{
+  .order .show-order .work-detials ul {
     justify-content: center;
     align-items: center;
   }
-  .order .show-order .work-detials li p span{
+  .order .show-order .work-detials li p span {
     font-size: 9px;
   }
-  .order .show-order .work-detials li p{
+  .order .show-order .work-detials li p {
     margin: 1% 0;
   }
-  .order .show-order .work-detials ul li{
+  .order .show-order .work-detials ul li {
     text-align: start;
     padding-right: 1%;
   }
-  .order .show-order .skills-req ul li{
+  .order .show-order .skills-req ul li {
     font-size: 11px;
     margin-bottom: 2%;
-   
   }
-  .order .show-order .adress p{
+  .order .show-order .adress p {
     width: 89%;
   }
-  .candidates .nav-cand{
+  .candidates .nav-cand {
     border-bottom: none;
   }
-  .candidates .nav-cand li:last-child{
+  .candidates .nav-cand li:last-child {
     margin: 4% auto 2%;
   }
-  .order .show-order .summary{
+  .order .show-order .summary {
     left: 27%;
     bottom: -3%;
   }
   /* finish show order */
+  /* start rejected clerk page */
+  .clark-section .about p{
+    font-size: 11px;
+    line-height: 1.9;
+  }
+  .team-work{
+    margin-bottom: 3%;
+  }
+  /* finish rejected clerk page */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1023.98px) and (max-width: 1200px) {
@@ -312,34 +351,37 @@
   }
   /* finish data complete */
 }
-@media(max-width: 1000px){
-/* responsive tabel */
-.tabel-cand thead{
-  display: none;
-}
-.tabel-cand, .tabel-cand tbody, .tabel-cand tr, .tabel-cand td{
-  display: block;
-  width: 100%;
-}
-.tabel-can tr{
-  margin-bottom:15px;
-}
-.tabel-can tbody td{
-  padding-left: 50%;
-  text-align: left;
-  position: relative;
-}
-.tabel-can tbody td:before{
-  content: attr(data-label);
-  position: absolute;
-  right:0;
-  width: 50%;
-  padding-right:15px;
-  font-size:20px;
-  text-align: right;
-}
-.tabel-cand tbody tr .case{
-  padding: 1% 4%;
-}
+@media (max-width: 1000px) {
+  /* responsive tabel */
+  .tabel-cand thead {
+    display: none;
+  }
+  .tabel-cand,
+  .tabel-cand tbody,
+  .tabel-cand tr,
+  .tabel-cand td {
+    display: block;
+    width: 100%;
+  }
+  .tabel-can tr {
+    margin-bottom: 15px;
+  }
+  .tabel-can tbody td {
+    padding-left: 50%;
+    text-align: left;
+    position: relative;
+  }
+  .tabel-can tbody td:before {
+    content: attr(data-label);
+    position: absolute;
+    right: 0;
+    width: 50%;
+    padding-right: 15px;
+    font-size: 20px;
+    text-align: right;
+  }
+  .tabel-cand tbody tr .case {
+    padding: 1% 4%;
+  }
   /* responsive tabel */
 }

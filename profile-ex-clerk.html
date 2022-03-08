@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>طلبات تحت القيد</title>
+    <title>ملف الموظف سابق</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -22,12 +23,6 @@
     <!-- animation -->
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <!-- animation -->
-    <!-- swiper -->
-    <link rel="stylesheet" href="css/swiper-demos.css">
-    <!-- swiper -->
-    <!-- sweet alert -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- sweet alert -->
     <!-- ? Favicon -->
     <link rel="icon" href="./image/logo.png" type="image" />
     <!-- ? Favicon -->
@@ -146,7 +141,7 @@
                                 </a>
                             </li>
                             <li class="side-item  ">
-                                <button class="dropdown-btn btn actives ">
+                                <button class="dropdown-btn btn  ">
                                     <i class="bi bi-view-list"></i>
                                     الطلبات
                                     <span>
@@ -156,7 +151,7 @@
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
                                     <a class="side-link" href="order.html">انشاء طلب جديد</a>
-                                    <a class="side-link active " href="all-order.html">كل الطلبات </a>
+                                    <a class="side-link  " href="all-order.html">كل الطلبات </a>
                                     <a class="side-link" href="#">الطلبات الجديدة</a>
                                     <a class="side-link" href="#">الطلبات المنتهية</a>
                                 </div>
@@ -185,7 +180,7 @@
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <button class="dropdown-btn btn">
+                                <button class="dropdown-btn btn actives">
                                     <i class="bi bi-bounding-box-circles"></i>
                                     الموظفين
                                     <span>
@@ -194,8 +189,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="clerk.html"> الموظفين الحاليين </a>
-                                    <a class="side-link" href="ex-clerk.html"> الموظفين السابقين</a>
+                                    <a class="side-link " href="clerk.html"> الموظفين الحاليين </a>
+                                    <a class="side-link active" href="ex-clerk.html"> الموظفين السابقين</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
@@ -214,10 +209,6 @@
                                         <p>موظف فرونت ايند ديفيلوبر</p>
                                         <span>مصري الجنسية</span>
                                     </div>
-                                </div>
-                                <div class="button">
-                                    <button id="sweetalert" onclick="acceptAlert()" class="btn first">قبول</button>
-                                    <button id="sweetalert" onclick="cancelAlert()" class="btn second">رفض</button>
                                 </div>
                             </div>
                             <div class="about" data-aos="fade-up" data-aos-duration="1000">
@@ -282,113 +273,15 @@
                                 <h6 class="head-small">روابط للتحميل</h6>
                                 <div class="content">
                                     <p>CV-ENG-Front-end Developer.pdf</p>
-                                    <button class="btn second">تحميل</button>
+                                    <button disabled class="btn second">تحميل</button>
                                 </div>
                                 <div class="content">
                                     <p>كورس فرونت ايند ادفانسد</p>
-                                    <button class="btn second">تحميل</button>
+                                    <button disabled class="btn second">تحميل</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                      <!---------------------- start team work -------------------------------------------->
-                      <div class="team-work" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="container px-0j ">
-                            <h4 class="head-categ">  متقدمين اخرين </h4>
-                            <div class="swiper mySwiper-1">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="content">
-                                            <div class="img d-flex justify-content-between w-100">
-                                                <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
-                                            </div>
-                                            <h6>Mohamed Tark</h6>
-                                            <span>فلاتر ديفيلوبر</span>
-                                            <p> <i class="bi bi-geo-alt"></i>
-                                                الرياض , شارع السيدة عائشة
-                                                , عمارة الدالى
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="content">
-                                            <div class="img d-flex justify-content-between w-100">
-                                                <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
-                                            </div>
-                                            <h6>Mohamed Tark</h6>
-                                            <span>فلاتر ديفيلوبر</span>
-                                            <p> <i class="bi bi-geo-alt"></i>
-                                                الرياض , شارع السيدة عائشة
-                                                , عمارة الدالى
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="content">
-                                            <div class="img d-flex justify-content-between w-100">
-                                                <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
-                                            </div>
-                                            <h6>Mohamed Tark</h6>
-                                            <span>فلاتر ديفيلوبر</span>
-                                            <p> <i class="bi bi-geo-alt"></i>
-                                                الرياض , شارع السيدة عائشة
-                                                , عمارة الدالى
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="content">
-                                            <div class="img d-flex justify-content-between w-100">
-                                                <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
-                                            </div>
-                                            <h6>Mohamed Tark</h6>
-                                            <span>فلاتر ديفيلوبر</span>
-                                            <p> <i class="bi bi-geo-alt"></i>
-                                                الرياض , شارع السيدة عائشة
-                                                , عمارة الدالى
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="content">
-                                            <div class="img d-flex justify-content-between w-100">
-                                                <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
-                                            </div>
-                                            <h6>Mohamed Tark</h6>
-                                            <span>فلاتر ديفيلوبر</span>
-                                            <p> <i class="bi bi-geo-alt"></i>
-                                                الرياض , شارع السيدة عائشة
-                                                , عمارة الدالى
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="content">
-                                            <div class="img d-flex justify-content-between w-100">
-                                                <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
-                                            </div>
-                                            <h6>Mohamed Tark</h6>
-                                            <span>فلاتر ديفيلوبر</span>
-                                            <p> <i class="bi bi-geo-alt"></i>
-                                                الرياض , شارع السيدة عائشة
-                                                , عمارة الدالى
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="swiper-pagination"></div> -->
-                                <!-- <div class="swiper-button-next"> </div>
-                                <div class="swiper-button-prev"></div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!---------------------- finish team work -------------------------------------------->
                 </div>
             </div>
         </div>
@@ -423,18 +316,13 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
     <!-- main js -->
-      <!-- slider -->
-      <script src="js/swiper-demos.js"></script>
-      <!-- slider -->
     <!-- animation -->
     <script src="js/aos-anmite.js"></script>
     <script>
         AOS.init();
     </script>
     <!-- animation -->
-    <!-- sweet alert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- sweet alert -->
+
     <!-- sidebar -->
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -455,77 +343,6 @@
         }
     </script>
     <!-- sidebar -->
-    <!-- sweet alert for accept -->
-    <script>
-        function acceptAlert() {
-            Swal.fire({
-                title: 'Your order has been accept',
-                icon: 'success',
-                showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                },
-                hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
-                },
-                showConfirmButton: false,
-                timer: 1500
-            })
-        };
-    </script>
-    <!-- sweet alert for accept -->
-    <!-- sweet alert for cancel -->
-    <script>
-        function cancelAlert() {
-            Swal.fire({
-                title: 'Your order has been canceled',
-                icon: 'error',
-                showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                },
-                hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
-                },
-                showConfirmButton: false,
-                timer: 1500
-            })
-        };
-    </script>
-    <!-- sweet alert for cancel -->
-      <!-- slider team work -->
-      <script>
-        var swiper = new Swiper(".mySwiper-1", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                340: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                },
-            },
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-    <!-- slider team work -->
 </body>
 
 </html>
