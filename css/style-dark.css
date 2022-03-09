@@ -1,9 +1,12 @@
 :root {
   --color-primary: #2e2c34;
-  --color-secound: #0c1321;
-  --color-third: #1b312e;
+  --color-secound: #101c1b;
+  --color-third: #274642;
   --color-fourth: #bf8c6d;
   --color-fifth: #fff;
+}
+body, nav{  
+transition: .7s all ease-in-out;
 }
 body.active-body {
   background: var(--color-secound);
@@ -26,10 +29,13 @@ body.active-body td,
 body.active-body tfoot,
 body.active-body th,
 body.active-body thead,
-body.active-body tr
- {
+body.active-body tr {
   color: var(--color-fifth) !important;
 }
+body.active-body .bg-white {
+  background-color: var(--color-third) ;
+}
+
 body.active-body .nav-link.active {
   color: var(--color-fourth) !important;
 }
@@ -37,8 +43,8 @@ body.active-body .page-item.active .page-link {
   background-color: var(--color-fourth);
 }
 body.active-body .first {
-  background-color: white;
-  color: var(--color-third);
+  background-color: var(--color-fifth);
+  color: var(--color-third) ;
   border-color: var(--color-secound);
 }
 body.active-body .second {
@@ -47,10 +53,10 @@ body.active-body .second {
 }
 body.active-body .first:hover {
   background-color: var(--color-fourth);
-  color: white;
+  color: var(--color-fifth);
 }
 body.active-body .second:hover {
-  background-color: white;
+  background-color: var(--color-fifth);
   color: #f24a4a;
 }
 /* strat navbar */
@@ -61,13 +67,13 @@ body.active-body .navbar .dropdown-lang .lang-menu .content h6,
 body.active-body .navbar .dropdown-lang .selected-lang .content h6 {
   color: var(--color-fifth);
 }
-body.active-body .navbar .dropdown-lang {
+body.active-body .navbar .dropdown-lang , body.active-body .navbar .dropdown-sign {
   border-color: var(--color-fifth);
 }
-body.active-body .navbar .dropdown-lang .lang-menu::after {
+body.active-body .navbar .dropdown-lang .lang-menu::after ,body.active-body .navbar .dropdown-sign .sign-menu::after {
   color: var(--color-fifth);
 }
-body.active-body .navbar .dropdown-lang .selected-lang {
+body.active-body .navbar .dropdown-lang .selected-lang ,body.active-body .navbar .dropdown-sign .selected-sign  {
   border-color: var(--color-fifth);
   background-color: var(--color-secound);
 }
@@ -81,7 +87,7 @@ body.active-body .navbar .btn-sign a {
   color: var(--color-secound);
 }
 body.active-body .navbar .navbar-toggler {
-  border-color: white;
+  border-color: var(--color-fifth);
 }
 body.active-body .navbar .navbar-toggler-icon,
 body.active-body .navbar .navbar-toggler-icon::before,
@@ -94,7 +100,7 @@ body.active-body footer {
   background-color: var(--color-third);
 }
 body.active-body footer a {
-  color: white;
+  color: var(--color-fifth);
 }
 /* finish footer */
 /* start login form */
@@ -102,13 +108,13 @@ body.active-body .form-login .head h2,
 body.active-body .form-login .form .form-label,
 body.active-body .form-login .form .forget a,
 body.active-body .form-login .have-acc a {
-  color: white;
+  color: var(--color-fifth);
 }
 body.active-body .form-login .head p {
   color: var(--color-fifth);
 }
 body.active-body .form-login .form .btn-sign {
-  background-color: white;
+  background-color: var(--color-fifth);
   color: var(--color-secound);
 }
 body.active-body .form-login .form .btn-sign:hover {
@@ -123,11 +129,11 @@ body.active-body .form .form-step-active h6,
 body.active-body .form .form-step-active label,
 body.active-body .form .form-step-active .code .avtive,
 body.active-body .form .form-step-active p span {
-  color: white;
+  color: var(--color-fifth);
 }
 body.active-body .form .form-step-active .full .btn,
 body.active-body .form .form-step-active .btn {
-  background-color: white;
+  background-color: var(--color-fifth);
   color: var(--color-secound);
 }
 body.active-body .form .form-step-active .full .btn:hover,
@@ -135,7 +141,7 @@ body.active-body .form .form-step-active .btn:hover {
   background-color: var(--color-fourth);
 }
 body.active-body .form .form-step-active .code div {
-  border-color: white;
+  border-color: var(--color-fifth);
 }
 body.active-body .form .form-step-active .code .avtive {
   border-color: var(--color-fourth);
@@ -148,7 +154,7 @@ body.active-body .data-coplete-tab .nav-pills .nav-link,
 body.active-body .data-coplete-tab .tab-content .first-tab h2,
 body.active-body .data-coplete-tab .kind .tab-content .form-label,
 body.active-body .data-coplete-tab .admin-responsable .form-label {
-  color: white;
+  color: var(--color-fifth);
 }
 body.active-body .data-coplete-tab .nav-pills .nav-link.active {
   color: var(--color-fourth);
@@ -161,11 +167,11 @@ body.active-body .data-coplete-tab .kind .nav-pills .nav-link {
   background-color: var(--color-primary);
 }
 body.active-body .data-coplete-tab .kind .nav-pills .nav-link.avtive {
-  background-color: white;
+  background-color: var(--color-fifth);
 }
 body.active-body .data-coplete-tab .kind .tab-content .btn-sign,
 body.active-body .data-coplete-tab .admin-responsable .btn-sign {
-  background-color: white;
+  background-color: var(--color-fifth);
   color: var(--color-primary);
 }
 /* finish data complete */
@@ -180,7 +186,7 @@ body.active-body .sidebar header h6,
 body.active-body .sidebar header p,
 body.active-body .sidebar .menu-side-bar .side-link,
 body.active-body .sidebar .menu-side-bar .dropdown-btn {
-  color: white;
+  color: var(--color-fifth);
 }
 body.active-body .sidebar .menu-side-bar .side-link.active,
 body.active-body .sidebar .menu-side-bar .dropdown-btn.active,
@@ -195,21 +201,39 @@ body.active-body .order .content {
   background-color: var(--color-third);
 }
 body.active-body .order .show-order .head .indection span {
-  background-color: white;
+  background-color: var(--color-fifth);
 }
 body.active-body .order .show-order .work-detials li p span {
-  color: white;
+  color: var(--color-fifth);
 }
 /* finish show order  */
 /* start rejected clerk page */
-body.active-body .clark-section{
+body.active-body .clark-section {
   background-color: var(--color-third);
 }
-body.active-body  .clark-section .skills .card  {
+body.active-body .clark-section .skills .card {
   background-color: var(--color-primary);
 }
-body.active-body .clark-section .skills .card i{
+body.active-body .clark-section .skills .card i {
   background-color: var(--color-secound);
-  color: white;
+  color: var(--color-fifth);
 }
 /* finish rejected clerk page */
+/* tabel */
+body.active-body .all-order table{
+  background-color: var(--color-third);
+}
+body.active-body .revision{
+color: var(--color-fifth)smoke;
+background-color: rgba(225, 255, 255, .1);
+}body.active-body  .page-item .page-link{
+  color: var(--color-secound) !important;
+}
+body.active-body .order .show-order .content .header .edit a{
+  color: var(--color-third) !important;
+}
+body.active-body  .order .show-order .content .header .edit a:hover{
+background-color: var(--color-third) !important;
+color: white !important;
+}
+/* tabel */

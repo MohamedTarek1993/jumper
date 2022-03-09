@@ -54,6 +54,15 @@ toggle.onclick = function () {
     logoLight.style.display="block";
     logoDark.style.display="none";
   }
+  dark.addEventListener( 'change', function() {
+    localStorage.setItem('dark',this.checked);
+    if(this.checked) {
+         body.classList.add('active-dark')
+    } else {
+         body.classList.remove('active-dark')     
+    }
+});
+
 }
 
 //    light&& dark

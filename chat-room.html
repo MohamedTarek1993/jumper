@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>كل الطلبات</title>
+    <title> غرفة الشات </title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -36,7 +36,7 @@
     <div id="preloader"></div>
     <!---------------------- finish loader -------------------------------------------->
     <!---------------------- start scroll-up -------------------------------------------->
-    <a id="button" class="scroll-up"><i class="bi bi-arrow-up-short"></i></a>
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
     <!---------------------- start dark && light mood -------------------------------------------->
     <!-- <div id="toggle">
@@ -167,7 +167,7 @@
                         </header>
                         <ul class="menu-side-bar">
                             <li class="side-item">
-                                <a class="side-link" href="main.html">
+                                <a class="side-link " href="main.html">
                                     <i class="bi bi-house-door"></i>
                                     الرئيسية
                                 </a>
@@ -178,8 +178,8 @@
                                     حسابي
                                 </a>
                             </li>
-                            <li class="side-item">
-                                <button class="dropdown-btn btn actives">
+                            <li class="side-item  ">
+                                <button class="dropdown-btn btn ">
                                     <i class="bi bi-view-list"></i>
                                     الطلبات
                                     <span>
@@ -189,20 +189,20 @@
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
                                     <a class="side-link" href="order.html">انشاء طلب جديد</a>
-                                    <a class="side-link active" href="all-order.html">كل الطلبات </a>
-                                    <a class="side-link" href="#">الطلبات الجديدة</a>
-                                    <a class="side-link" href="#">الطلبات المنتهية</a>
+                                    <a class="side-link " href="all-order.html">كل الطلبات </a>
+                                    <a class="side-link" href="new-order.html">الطلبات الجديدة</a>
+                                    <a class="side-link " href="old-order.html">الطلبات المنتهية</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="favourit.html">
                                     <i class="bi bi-heart"></i>
                                     المفضلة
                                 </a>
                             </li>
                             <li class="side-item">
-                                <button class="dropdown-btn btn">
+                                <button class="dropdown-btn btn actives">
                                     <i class="bi bi-chat-dots"></i>
                                     الدردشة
                                     <span>
@@ -212,7 +212,7 @@
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
                                     <a class="side-link" href="#"> تواصل مع الادارة</a>
-                                    <a class="side-link" href="#"> غرف الدردشة</a>
+                                    <a class="side-link active" href="chat-room.html"> غرف الدردشة</a>
 
                                 </div>
                                 <!-- drop-menu -->
@@ -227,155 +227,88 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="clerk.html"> الموظفين الحاليين </a>
-                                    <a class="side-link" href="ex-clerk.html"> الموظفين السابقين</a>
-                                </div>
-                                <!-- drop-menu -->
+                                    <a class="side-link " href="clerk.html"> الموظفين الحاليين </a>
+                                    <a class="side-link " href="ex-clerk.html"> الموظفين السابقين</a>
+                                    <!-- drop-menu -->
                             </li>
                         </ul>
                     </div>
                     <!-- strat side bar -->
                 </div>
-                <div class="col-lg-9 col-md-7 col-12">
-                    <div class="all-order" data-aos="fade-up" data-aos-duration="1000">
-                        <h2 class="head-categ">كل الطلبات</h2>
-                        <!-- في حالة عدم وجود  طلبات -->
-                        <!-- <div class="non-exist" data-aos="fade-up" data-aos-duration="1000">
-                            <lottie-player src="json/lf30_editor_e2pyrplo.json" background="transparent" speed="1"
-                                style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                            <h6>عذرا ! ليس لديك طلبات </h6>
-                            <p>لم تقم بعمل أي طلبات بعد ! هي ابدأ الآن بانشاء
-                                أول طلب للتوظيف على منصة جمبرز واكتب مواصفات طلبك</p>
-                            <a class="btn first" href="order.html">انشاء طلب جديد</a>
-                        </div> -->
-                        <!-- في حالة عدم وجود  طلبات -->
-                        <!-- في حالة  وجود  طلبات -->
-
-                        <table class="table-responsive">
-                            <thead>
-                                <tr>
-                                    <td>رقم الطلب</td>
-                                    <td>تاريخ البداية</td>
-                                    <td>تاريخ النهاية</td>
-                                    <td>مدة العمل</td>
-                                    <td> عدد الجمبرز</td>
-                                    <td> التكلفة المفترضة</td>
-                                    <td> حالة الطلب</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- في حالة وجود طلب جديد -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="new"> طلب جديد</span> </td>
-                                    <td><a target="_blank" href="show-order-new.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود طلب جديد -->
-                                <!-- في حالة وجود طلب منهي -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="success"> طلب منتهي</span> </td>
-                                    <td><a target="_blank" href="show-order-success.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود طلب منهي -->
-                                <!-- في حالة وجود طلب غير مكتمل -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="uncoplete"> طلب غير مكتمل</span> </td>
-                                    <td><a target="_blank" href="show-order-pending.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود طلب غير مكتمل -->
-                                <!-- في حالة وجود  انتظار الدفع   -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="pending"> في انتظار الدفع </span> </td>
-                                    <td><a target="_blank" href="show-order-wait.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود  انتظار الدفع   -->
-                                <!-- في حالة جاري المعالجة      -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="revision"> جاري المعالجة </span> </td>
-                                    <td><a target="_blank" href="show-order-revision.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة جاري المعالجة      -->
-                                <!-- في حالة  جاري العمل      -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="work"> جاري العمل </span> </td>
-                                    <td><a target="_blank" href="show-order-work.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة  جاري العمل      -->
-
-
-
-
-
-
-
-                            </tbody>
-                        </table>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <h2 class="head-categ">
+                        غرف الدردشة
+                    </h2>
+                    <div class="contact-pepole">
+                        <div class="search">
+                            <input type="text" class="form-control" placeholder="... ابحث هنا عن من تريد التحدث معه">
+                        </div>
+                        <div class="pepole">
+                            <h6>الكل (222 )</h6>
+                            <ul>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                                <li>
+                                    <img src="image/cand1.png" alt="chat">
+                                    <h6>أحمد السيد</h6>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <!---------------------------- pagination ------------------------------->
-                    <nav class=" bg-white pb-3 pt-5 mb-4" aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active" aria-current="page"><a class="page-link " href="#">1</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="summary">عرض 7 من اصل 250 طلب</p>
-                    </nav>
-                    <!---------------------------- pagination ------------------------------->
-                    <!-- في حالة  وجود  طلبات -->
+                </div>
+                <div class="col-lg-6 col-md-4 col-12">
+                    <!-- في حالة عدم وجود  رسائل -->
+                    <!-- <div class="non-exist" data-aos="fade-up" data-aos-duration="1000">
+                        <lottie-player src="json/lf30_editor_cpd3ogma.json" background="transparent" speed="1"
+                            style="width: 200px; height: 200px;" loop autoplay></lottie-player>
+                        <h6> عذرا ! ليس لديك رسائل بعد </h6>
+                        <p>لم تقم بعمل دردشة الى الآن , يمكنك اختيار من تريد التحدث معه
+                            واجراء الدردشة الآن</p>
+                    </div> -->
+                    <!-- في حالة عدم وجود  رسائل -->
+                    <!-- في حالة  وجود  رسائل -->
+                    <div class="container">
+                        <div class="chat-message">
+                            <div class="head">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- في حالة  وجود  رسائل -->
                 </div>
             </div>
         </div>
@@ -402,7 +335,9 @@
             </div>
         </div>
     </footer>
-    <!---------------------- finish footer  -------------------------------------------->
+    <!---------------------- finish footer -------------------------------------------->
+
+
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -411,15 +346,15 @@
     <!-- animation -->
     <script src="js/aos-anmite.js"></script>
     <script>
-        AOS.init();
+        AOS.init({ disable: 'mobile' });
     </script>
     <!-- animation -->
-    <!-- sweet alert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- sweet alert -->
-    <!-- lottie -->
+    <!-- loottie -->
     <script src="js/lottie.js"></script>
-    <!-- lottie -->
+    <!-- loottie -->
+    <!-- sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweetalert -->
     <!-- sidebar -->
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -440,6 +375,26 @@
         }
     </script>
     <!-- sidebar -->
+    <script>
+        function deleteAlert() {
+            Swal.fire({
+                title: 'Are you sure rebuy this order?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, rebuy it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'rebuy!',
+                        'Your order has been rebuied.',
+                        'success'
+                    )
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الموظفين الحاليين</title>
+    <title> المفضلة</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -36,16 +36,16 @@
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
     <!---------------------- start dark && light mood -------------------------------------------->
-    <div id="toggle">
+    <!-- <div id="toggle">
         <span class="light " id="light">
-            <i class="bi bi-brightness-high" style=" color: #F2E938;"></i>
+            <i class="bi bi-brightness-high" style=" color: #ff8800;"></i>
         </span>
         <span class="dark" id="dark">
             <i class="bi bi-moon-fill "></i>
         </span>
         <div class="indicator">
         </div>
-    </div>
+    </div> -->
     <!---------------------- finish dark && light mood -------------------------------------------->
     <!---------------------- start navbar -------------------------------------------->
     <nav class="navbar navbar-expand-lg ">
@@ -105,10 +105,45 @@
                 </div>
                 <!-- lang dropdown -->
                 <!-- sign up -->
-                <div class="btn-sign trans">
+                <!-- <div class="btn-sign trans">
                     <a href="login.html">تسجيل الدخول</a>
+                </div> -->
+                <!-- في حالة تم تسجيل الدخول -->
+                <div class="dropdown dropdown-sign">
+                    <a class=" dropdown-toggle sign" href="#" role="button" id="dropdownMenuLink5"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="content">
+                            <h6>أحمد ابراهيم</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu selected-sign" aria-labelledby="dropdownMenuLink5">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-person-circle"></i>
+                                    <h6>حسابي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-view-list"></i>
+                                    <h6>طلباتي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    <h6>تسجيل الخروج</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
+                <!-- في حالة تم تسجيل الدخول -->
                 <!-- sign up -->
             </div>
         </div>
@@ -158,7 +193,7 @@
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link active" href="favourit.html">
                                     <i class="bi bi-heart"></i>
                                     المفضلة
                                 </a>
@@ -180,7 +215,7 @@
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <button class="dropdown-btn btn actives">
+                                <button class="dropdown-btn btn">
                                     <i class="bi bi-bounding-box-circles"></i>
                                     الموظفين
                                     <span>
@@ -189,7 +224,7 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link active" href="clerk.html"> الموظفين الحاليين </a>
+                                    <a class="side-link " href="clerk.html"> الموظفين الحاليين </a>
                                     <a class="side-link " href="ex-clerk.html"> الموظفين السابقين</a>
                                     <!-- drop-menu -->
                             </li>
@@ -199,22 +234,21 @@
                 </div>
                 <div class="col-lg-9 col-md-7 col-12">
                     <h2 class="head-categ">
-                        الموظفين الحاليين
+                        قائمة المفضلات
                     </h2>
-                    <!-- في حالة عدم وجود  موظفين -->
-                    <!-- <div class="non-exist" data-aos="fade-up" data-aos-duration="1000">
-                        <lottie-player src="json/lf30_editor_e2pyrplo.json" background="transparent" speed="1"
-                            style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                        <h6> عذرا ! ليس لديك موظفين </h6>
-                        <p>لم تقم بعمل أي طلبات بعد واضافة موظفين بناءا على طليك ! هي ابدأ
-                            الآن بانشاء أول طلب للتوظيف على منصة جمبرز واحصل على المزيد
-                            من الموظفين المناسبين لطلبك</p>
-                        <a class="btn first" href="order.html">انشاء طلب جديد</a>
-                    </div> -->
-                    <!-- في حالة عدم وجود  موظفين -->
-                    <!-- في حالة  وجود  موظفين -->
                     <div class="ex-clerck team-work">
                         <div class="container">
+                            <!-- في حالة عدم وجود قائمة مفضلة -->
+                            <!-- <div class="non-exist" data-aos="fade-up" data-aos-duration="1000">
+                                <lottie-player src="json/lf30_editor_boyshymo.json" background="transparent" speed="1"
+                                    style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                                <h6>عذرا ! ليس لديك قوائم مفضلة بعد </h6>
+                                <p>لم تقم بحفظ اى موظفين في قوائم المفضلة لديك
+                                    قم الآن بحفظ من تريد في القائمة للعودة اليه بكل سهولة في اى وقت</p>
+                                <a class="btn first" href="order.html">انشاء طلب جديد</a>
+                            </div> -->
+                            <!-- في حالة عدم وجود قائمة مفضلة -->
+                            <!-- في حالة  وجود قائمة مفضلة -->
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-12">
                                     <div class="swiper-slide" data-aos="zoom-in-left" data-aos-easing="linear"
@@ -222,7 +256,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -239,7 +273,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -256,7 +290,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -273,7 +307,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -290,7 +324,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -307,7 +341,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -324,7 +358,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -341,7 +375,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -358,7 +392,7 @@
                                         <div class="content">
                                             <div class="img d-flex justify-content-between w-100">
                                                 <img src="./image/per1.png" alt="person">
-                                                <a href="profile-clerk.html"> <i class="bi bi-three-dots"></i></a>
+                                                <a href="profile-ex-clerk.html"> <i class="bi bi-three-dots"></i></a>
                                             </div>
                                             <h6>Mohamed Tark</h6>
                                             <span>فلاتر ديفيلوبر</span>
@@ -373,9 +407,9 @@
 
 
                             </div>
+                            <!-- في حالة  وجود قائمة مفضلة -->
                         </div>
                     </div>
-                    <!-- في حالة  وجود  موظفين -->
                 </div>
             </div>
         </div>
@@ -416,9 +450,9 @@
         AOS.init({ disable: 'mobile' });
     </script>
     <!-- animation -->
-    <!-- lottie -->
+    <!-- loottie -->
     <script src="js/lottie.js"></script>
-    <!-- lottie -->
+    <!-- loottie -->
     <!-- sidebar -->
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");

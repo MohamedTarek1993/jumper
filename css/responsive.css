@@ -8,11 +8,13 @@
     padding: 0;
   }
   .navbar .dropdown-lang,
-  .navbar .btn-sign {
+  .navbar .btn-sign,
+  .navbar .dropdown-sign {
     width: 44%;
     margin: 10px auto !important;
   }
-  .navbar .dropdown-lang .dropdown-menu[data-bs-popper] {
+  .navbar .dropdown-lang .dropdown-menu[data-bs-popper],
+  .navbar .dropdown-sign .dropdown-menu[data-bs-popper] {
     left: -5px;
   }
   /* finish navbar */
@@ -172,9 +174,9 @@
   .modal-accept .modal-footer {
     justify-content: center;
   }
-  .order .show-order .summary {
+  .order .summary {
     left: 23%;
-    bottom: -1%;
+    bottom: -7%;
   }
   /* finish show order */
   /* start rejected clerk page */
@@ -187,7 +189,7 @@
   }
   .clark-section .head .button {
     margin-top: 3%;
-    width: 70%;
+    width: 97%;
   }
   .clark-section .head .info h6 {
     font-size: 20px;
@@ -205,6 +207,44 @@
     font-size: 11px;
   }
   /* finish rejected clerk page */
+  /* start profile clerk page */
+  .form-remove .form-step-remove-active .show h6,
+  .form-extension .form-step-extension-active .show h6 {
+    font-size: 18px;
+  }
+  .form-extension .form-step-extension-active ul p {
+    font-size: 13px;
+  }
+  .form-extension .form-step-extension-active ul span {
+    font-size: 11px;
+  }
+  .form-extension .form-step-extension-active ul i {
+    font-size: 12px;
+  }
+  /* start profile clerk page */
+  /* table */
+  .all-order table tbody td {
+    padding: 1% 2%;
+  }
+  .all-order table thead td {
+    font-size: 14px;
+  }
+  /* table */
+  .non-exist a {
+    width: 50%;
+  }
+  /* start new order page */
+  .order .pattern .head p{
+    font-size: 9px;
+  }
+  .order .pattern .button .btn{
+    width: 80%;
+    font-size: 11px;
+  }
+  .order .pattern .content p {
+    font-size: 11px;
+  }
+  /* finish new order page */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -213,11 +253,13 @@
     width: 100%;
   }
   .navbar .dropdown-lang,
-  .navbar .btn-sign {
+  .navbar .btn-sign,
+  .navbar .dropdown-sign {
     width: 24%;
     margin: 10px 0 !important;
   }
-  .navbar .dropdown-lang .dropdown-menu[data-bs-popper] {
+  .navbar .dropdown-lang .dropdown-menu[data-bs-popper],
+  .navbar .navbar .dropdown-sign .dropdown-menu[data-bs-popper] {
     left: 12px;
   }
   /* finish navbar */
@@ -307,20 +349,55 @@
   .candidates .nav-cand li:last-child {
     margin: 4% auto 2%;
   }
-  .order .show-order .summary {
+  .order .summary {
     left: 27%;
     bottom: -3%;
   }
   /* finish show order */
   /* start rejected clerk page */
-  .clark-section .about p{
+  .clark-section .about p {
     font-size: 11px;
     line-height: 1.9;
   }
-  .team-work{
+  .team-work {
     margin-bottom: 3%;
   }
   /* finish rejected clerk page */
+  /* start profile clerk page */
+  .clark-section .head {
+    flex-direction: column;
+  }
+  .clark-section .head .button {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .clark-section .head .info {
+    width: 100%;
+  }
+  .clark-section .skills .card {
+    margin-bottom: 10%;
+  }
+  /* finish profile clerk page */
+  /* tabel */
+  .all-order table thead td {
+    font-size: 14px;
+  }
+  .all-order table tbody td {
+    font-size: 11px;
+  }
+  /* tabel */
+  /* start new order page */
+  .order .pattern .head p{
+    font-size: 11px;
+  }
+  .order .pattern .button .btn{
+    width: 80%;
+    font-size: 13px;
+  }
+  .order .pattern .content p {
+    font-size: 13px;
+  }
+  /* finish new order page */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1023.98px) and (max-width: 1200px) {
