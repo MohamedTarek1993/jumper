@@ -102,8 +102,45 @@ ul {
   color: var(--color-third) !important;
   font-family: "regular" !important;
 }
+input[type="data"] {
+  color: var(--color-secound);
+  font-family: "regular";
+}
+input[type="data"]::placeholder {
+  content: "";
+}
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  opacity: 0;
+  padding: 5px;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 3px;
+}
 select:focus {
   box-shadow: unset !important;
+}
+/* delete arrow from input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* delete arrow from input number */
+#showGinder {
+  display: none;
+  animation: ginder 1s linear ;
+  transition: .25s all ease;
+}
+@keyframes ginder {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /* custom  */
 .icon {
@@ -144,6 +181,17 @@ select:focus {
 .second:hover {
   color: white;
   background-color: var(--color-third);
+}
+.pend {
+  background-color: var(--color-fourth);
+  color: white;
+  border: 1px solid var(--color-fourth);
+  font-family: "regular";
+  font-size: 14px;
+  transition: 0.25s all ease;
+}
+.pend:hover {
+  background-color: white;
 }
 .pending {
   color: #c8cc71;
@@ -1188,20 +1236,24 @@ section .details span {
   color: var(--color-primary);
   background-position: left;
 }
-.data-coplete-tab .admin-responsable textarea {
+.data-coplete-tab .admin-responsable textarea,
+.order .content textarea {
   height: 150px;
 }
-.data-coplete-tab .admin-responsable .form-check-input {
+.data-coplete-tab .admin-responsable .form-check-input,
+.order .content .form-check-input {
   background-color: var(--color-fourth);
   border-color: var(--color-fourth);
   float: right;
   margin-left: 1em;
 }
-.data-coplete-tab .admin-responsable .form-check-label {
+.data-coplete-tab .admin-responsable .form-check-label,
+.order .content .form-check-label {
   font-family: "regular";
   font-size: 14px;
 }
-.data-coplete-tab .admin-responsable .form-check-label a {
+.data-coplete-tab .admin-responsable .form-check-label a,
+.order .content .form-check-label a {
   color: var(--color-fourth);
 }
 .data-coplete-tab .admin-responsable .btn-sign {
@@ -1366,7 +1418,7 @@ section .details span {
   padding: 20px 20px 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 .order .content .new-form .form-step-active .input-group {
@@ -1378,9 +1430,7 @@ section .details span {
 .order .content .new-form .form-step-active .form-select {
   width: 95%;
 }
-.input-group.show-ginder {
-  display: none;
-}
+
 .order .content .new-form .form-step-active .share {
   display: flex;
   justify-content: center;
@@ -1397,17 +1447,9 @@ section .details span {
   text-align: start;
   width: 100%;
 }
-.order .content .new-form .form-step-active .full .btn-next {
-  background-color: var(--color-third);
-  color: white;
-  font-family: "regular";
-  width: 45%;
+.order .content .new-form .form-step-active .full .btn {
+  width: 30%;
   transition: 0.25s all ease-in-out;
-  border: 1px solid var(--color-third);
-}
-.order .content .new-form .form-step-active .full .btn-next:hover {
-  background-color: white;
-  color: var(--color-third);
 }
 /* start main page */
 .order .main {
@@ -2181,6 +2223,9 @@ nav {
 .non-exist a {
   width: 40%;
 }
+.non-exist button {
+  width: 100%;
+}
 /* not exixt sec */
 /* start new order page */
 .order .new-order {
@@ -2257,41 +2302,41 @@ nav {
 }
 /* finish new order page */
 /* start chat room page */
-.order .contact-pepole{
+.order .contact-pepole {
   background-color: white;
   margin: 3% 0;
   padding: 2% 1%;
   border-radius: 8px;
 }
-.order .contact-pepole .search{
+.order .contact-pepole .search {
   padding: 10% 1%;
 }
-.order .contact-pepole .search .form-control::placeholder{
+.order .contact-pepole .search .form-control::placeholder {
   font-size: 10px;
 }
-.order .contact-pepole .pepole{
+.order .contact-pepole .pepole {
   margin: 4% 0;
   padding: 0 3%;
 }
-.order .contact-pepole .pepole h6{
+.order .contact-pepole .pepole h6 {
   font-size: 14px;
-  font-family: 'meduim';
+  font-family: "meduim";
   color: var(--color-sixth);
 }
-.order .contact-pepole .pepole ul{
+.order .contact-pepole .pepole ul {
   padding: 0;
   margin: 10% 0;
-  overflow-y:scroll ;
+  overflow-y: scroll;
   height: 300px;
 }
-.order .contact-pepole .pepole ul li{
+.order .contact-pepole .pepole ul li {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: start;
   margin: 10% 0;
 }
-.order .contact-pepole .pepole ul li img{
+.order .contact-pepole .pepole ul li img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
