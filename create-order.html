@@ -667,19 +667,19 @@
     <script>
         function test(){
             document.querySelector(".pop-celander").style.display = "none";
-            document.querySelector(".pop-celander").classList.toggle('close-animate')
-
         }
         function closeAnimate(){
-       
+    
             document.querySelector(".pop-celander").classList.add('close-animate')
-           setInterval( test, 1000)  
+           setTimeout( test, 1000)  
        
     }
         function choose_duration(sels) {
             var ids = sels.value;
             if (ids == 20) {
                 document.querySelector(".pop-celander").style.display = "flex";
+                document.querySelector(".pop-celander").classList.remove('close-animate');
+
             }
             else{
                 document.querySelector(".pop-celander").style.display = "none";

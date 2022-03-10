@@ -281,7 +281,7 @@ input::-webkit-inner-spin-button {
     transform: translate(-50%, -50%);
   }
 }
-.close-animate{
+.close-animate {
   animation: closeAnimate 1s linear;
 }
 @keyframes closeAnimate {
@@ -291,36 +291,36 @@ input::-webkit-inner-spin-button {
   }
   25% {
     transform: translate(-50%, -45%);
-    opacity: .7;
+    opacity: 0.7;
   }
   75% {
     transform: translate(-50%, -25%);
-    opacity: .4;
+    opacity: 0.4;
   }
   100% {
     transform: translate(-50%, -10%);
     opacity: 0;
   }
 }
-.pop-celander .head{
-display: flex;
-justify-content: space-between;
-align-items: center;
-text-align: center;  
-padding: 4% 1%;
+.pop-celander .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 4% 1%;
 }
-.pop-celander .head .button{
+.pop-celander .head .button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 30%;
 }
-.pop-celander .head h6{
-  font-family: 'light';
+.pop-celander .head h6 {
+  font-family: "light";
   color: var(--color-secound);
 }
-.pop-celander .head .first{
+.pop-celander .head .first {
   margin-top: 5%;
   width: 100%;
 }
@@ -349,7 +349,7 @@ padding: 4% 1%;
   cursor: pointer;
 }
 .month h2 {
-  font-size:20px;
+  font-size: 20px;
   font-family: "bold";
   text-transform: uppercase;
   margin-bottom: 3%;
@@ -371,7 +371,7 @@ padding: 4% 1%;
 
 .weekdaus div {
   font-size: 22px;
-  font-family: 'semibold';
+  font-family: "semibold";
   letter-spacing: 0.1rem;
   width: calc(34.2rem / 7);
   display: flex;
@@ -385,11 +385,11 @@ padding: 4% 1%;
   flex-wrap: wrap;
   padding: 0.2rem;
   margin: auto;
-  background-color:white;
+  background-color: white;
 }
 .days div {
   font-size: 18px;
-  font-family: 'regular';
+  font-family: "regular";
   margin: 0.3rem;
   width: calc(30.2rem / 7);
   height: 3rem;
@@ -404,7 +404,6 @@ padding: 4% 1%;
   border: 1px solid white;
   color: var(--color-fourth);
   cursor: pointer;
-  
 }
 .prv-days,
 .next-days {
@@ -414,7 +413,7 @@ padding: 4% 1%;
   background-color: var(--color-fourth);
   color: white;
 }
-.pop-celander .footer{
+.pop-celander .footer {
   border-bottom: 1px solid var(--color-fourth);
   display: flex;
   align-items: center;
@@ -423,7 +422,7 @@ padding: 4% 1%;
   padding: 4% 0;
   border-top: 1px solid var(--color-fourth);
 }
-.pop-celander .footer .btn{
+.pop-celander .footer .btn {
   width: 50%;
 }
 /* cleander */
@@ -1281,78 +1280,51 @@ footer .slug p {
 }
 
 /* upload files */
-.data-coplete-tab .kind .tab-content .input-group.upload {
-  color: var(--color-fourth);
-  background-color: rgba(203, 163, 51, 0.06);
+form .file-upload-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150px;
   border: 1px dashed var(--color-fourth);
-  margin-top: 6%;
+  border-radius: 5px;
+  font-family: "regular";
+}
+form .file-upload-wrapper:after {
+  content: attr(data-text);
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(203, 163, 51, 0.06);
+  padding: 10px 15px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4%;
-  z-index: 0;
-}
-.data-coplete-tab .kind .tab-content .input-group.upload .file-input {
-  z-index: 0;
-}
-.data-coplete-tab .kind .tab-content .input-group.upload i {
-  margin-left: 2% !important;
-}
-.data-coplete-tab .kind .tab-content .input-group.upload p {
-  font-family: "regular";
-  margin: 0;
-}
-section .details span {
-  font-size: 14px;
-  color: var(--color-fourth);
-  font-family: "light";
-}
-.progress-area .row .content {
-  width: 100%;
-  margin-left: 15px;
-}
-.progress-area .details {
-  display: flex;
-  align-items: center;
-  margin-bottom: 7px;
-  justify-content: space-between;
-}
-.progress-area .content .progress-bar {
-  height: 6px;
-  width: 100%;
-  margin-bottom: 4px;
-  background: #fff;
-  border-radius: 30px;
-}
-.content .progress-bar .progress {
+  width: calc(100% - 40px);
+  pointer-events: none;
+  z-index: 20;
   height: 100%;
-  width: 0%;
-  background: var(--color-fourth);
-  border-radius: inherit;
+  width: 100%;
+  line-height: 40px;
+  color: #999;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 300;
 }
-.uploaded-area {
-  max-height: 232px;
-  overflow-y: scroll;
+form .file-upload-wrapper input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
 }
-.uploaded-area.onprogress {
-  max-height: 150px;
-}
-.uploaded-area::-webkit-scrollbar {
-  width: 0px;
-}
-.uploaded-area .row .content {
-  display: flex;
-  align-items: center;
-}
-.uploaded-area .row .details {
-  display: flex;
-  margin-left: 15px;
-  flex-direction: column;
-}
-.uploaded-area .row .details .size {
-  color: #404040;
-  font-size: 11px;
-}
-
+/* upload files */
 .data-coplete-tab .kind .tab-content .input-group {
   position: relative;
   margin: 1% 0;
@@ -2521,4 +2493,35 @@ nav {
   border-radius: 50%;
   margin-left: 4%;
 }
-/* start chat room page  */
+/* finish chat room page  */
+/* start account page */
+.order .account {
+  background-color: white;
+  border-radius: 8px;
+  padding: 3% 1%;
+  margin: 3% 0;
+}
+.order .head-main {
+  margin: 3% 0;
+}
+.order .account .profile-pic-div {
+  left: 2%;
+}
+.order .account #uploadBtn{
+  left: 59%;
+}
+.order .account h2:last-child{
+  margin-top: 232%;
+}
+.order .account .first-clas{
+  border-bottom: 1px solid #707070;
+  padding-bottom: 5%;
+}
+.order .account .second-clas{
+padding-top: 8%;
+}
+.order .account .btn{
+margin-top: 4%;
+width: 43%;
+}
+/* start account page */

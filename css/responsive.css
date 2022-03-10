@@ -234,10 +234,10 @@
     width: 50%;
   }
   /* start new order page */
-  .order .pattern .head p{
+  .order .pattern .head p {
     font-size: 9px;
   }
-  .order .pattern .button .btn{
+  .order .pattern .button .btn {
     width: 80%;
     font-size: 11px;
   }
@@ -245,6 +245,24 @@
     font-size: 11px;
   }
   /* finish new order page */
+  /* start account page */
+  .order .head-main {
+    text-align: center;
+  }
+  .order .account .head-categ {
+    text-align: center;
+    font-size: 25px;
+  }
+  .order .account #uploadBtn {
+    left: 43%;
+  }
+  .order .account h2:last-child {
+    display: none;
+  }
+  .order .account .input-group {
+    margin: 2% 0;
+  }
+  /* finish account page */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -387,10 +405,10 @@
   }
   /* tabel */
   /* start new order page */
-  .order .pattern .head p{
+  .order .pattern .head p {
     font-size: 11px;
   }
-  .order .pattern .button .btn{
+  .order .pattern .button .btn {
     width: 80%;
     font-size: 13px;
   }
@@ -398,6 +416,14 @@
     font-size: 13px;
   }
   /* finish new order page */
+  /* start account page */
+  .order .account h2:last-child {
+    display: none;
+  }
+  .order .account #uploadBtn {
+    left: 42%;
+  }
+  /* finish account page */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1023.98px) and (max-width: 1200px) {
@@ -427,6 +453,17 @@
     padding: 21px 20px;
   }
   /* finish data complete */
+  /* start account page */
+  .order .account .profile-pic-div{
+    left: -7%;
+  }
+  .order .account .head-categ{
+    font-size: 23px;
+  }
+  .order .account h2:last-child{
+    margin-top: 322%;
+  }
+  /* finish account page */
 }
 @media (max-width: 1000px) {
   /* responsive tabel */
