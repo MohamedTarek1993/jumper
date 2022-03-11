@@ -5,7 +5,7 @@
   --color-secound: #0c1321;
   --color-third: #1b312e;
   --color-fourth: #bf8c6d;
-  --color-fifth: #5c5a61;
+  --color-fifth: #8F92A1;
   --color-sixth: #2e2c34;
 }
 @font-face {
@@ -2629,3 +2629,74 @@ input[type="number"] {
   color: var(--color-third) !important;
   transition: 0.7s ease-in-out;
 }
+/* ======= reset_password ======= */
+/* table in attend */
+.table-work p{
+  margin-bottom: 0;
+  font-size: 15px;
+  font-family: 'semibold';
+  color: var(--color-sixth);
+}
+.table-work{
+  margin: 2% 0;
+  width: 1000px;
+}
+.table-work thead td span{
+  font-size: 12px;
+  font-family: 'light';
+  color:#8F92A1 ;
+}
+.table-work thead td:first-child{
+  text-align: start;
+  width: 254px;
+}
+.table-work .name{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.table-work tbody td{
+  text-align: center;
+  position: relative;
+}
+.table-work .bi-x{
+  font-size: 22px;
+  color: #EC5555;
+}
+.table-work .bi-check2{
+  font-size: 22px;
+  color: var(--color-primary);
+}
+.table-work tbody td .hint{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 24px rgba(134, 134, 134, 0.16);
+  padding: 1% 2%;
+  transition: .25s all ease;
+  display: none;
+}
+.table-work tbody td .hint p{
+  font-size:11px;
+}
+.table-work tbody td .hint span{
+ font-size: 9px;
+ color: #8F92A1;
+}
+.table-work tbody td .hint::before{
+  content: "";
+  top: 3px;
+  right: 2px;
+  position: absolute;
+  height: 30px;
+  width: 3px;
+  background-color: var(--color-fourth);
+}
+.table-work tbody td .holiday::before{
+  background-color:#EC5555 !important;
+}
+/* table in attend */
