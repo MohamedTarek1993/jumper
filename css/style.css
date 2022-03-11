@@ -761,7 +761,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid var(--color-primary);
   width: 12%;
   border-radius: 8px;
-  padding: 8px 4px;
+  padding: 5px 0px;
   transition: 0.9s all;
   position: relative;
 }
@@ -770,11 +770,10 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: row;
 }
 .navbar .dropdown-lang .lang-menu .content h6,
 .navbar .dropdown-lang .selected-lang .content h6 {
-  font-size: 14px;
+  font-size: 20px;
   color: var(--color-secound);
   font-family: "regualr";
   margin: 0;
@@ -795,9 +794,14 @@ input::-webkit-inner-spin-button {
   border-radius: 10px;
   animation: showtoggle 0.5s linear;
 }
+.navbar .dropdown-lang .selected-lang .dropdown-item {
+  margin: 5% 0;
+  padding: 0;
+}
+
 .navbar .dropdown-lang .dropdown-menu[data-bs-popper] {
   top: 96%;
-  left: -15px;
+  left: -6px;
 }
 .navbar .dropdown-lang .lang-menu.show::after {
   border-bottom: 0.3em solid;
@@ -961,8 +965,8 @@ footer .slug p {
 }
 .form-login .form .forget a {
   color: #0c1321;
-  font-family: "meduim-m";
-  font-size: 14px;
+  font-family: "meduim";
+  font-size: 18px;
 }
 .form-login .form .btn-sign {
   background-color: var(--color-third);
@@ -2507,21 +2511,121 @@ nav {
 .order .account .profile-pic-div {
   left: 2%;
 }
-.order .account #uploadBtn{
+.order .account #uploadBtn {
   left: 59%;
 }
-.order .account h2:last-child{
+.order .account h2:last-child {
   margin-top: 232%;
 }
-.order .account .first-clas{
+.order .account .first-clas {
   border-bottom: 1px solid #707070;
   padding-bottom: 5%;
 }
-.order .account .second-clas{
-padding-top: 8%;
+.order .account .second-clas {
+  padding-top: 8%;
 }
-.order .account .btn{
-margin-top: 4%;
-width: 43%;
+.order .account .btn {
+  margin-top: 4%;
+  width: 43%;
 }
 /* start account page */
+/* reset password page */
+/* ======= reset_password ======= */
+.reset_password {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 0;
+}
+.reset_password .password_container {
+  margin: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20% 5%;
+}
+.reset_password .password_container h3 {
+  text-align: center;
+  font-family: "bold";
+  color: var(--color-primary);
+}
+.reset_password .password_container p {
+  text-align: center;
+  width: 70%;
+  font-size: 0.9rem;
+  margin: 3% auto 5%;
+  font-family: "light";
+  color: var(--color-primary);
+}
+.reset_password .password_container .form-group {
+  margin-bottom: 1rem;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.reset_password .password_container .form-group .form-control:focus {
+  background-color: #fff;
+  transition: 0.7s ease-in-out;
+}
+
+.reset_password .password_container .submit_login {
+  font-family: "semibold";
+  background-color: var(--color-third);
+  color: #fff;
+  margin: 1.5rem auto;
+  display: block;
+  width: 80%;
+  padding: 0.6rem 0.75rem;
+  transition: 0.7s ease-in-out;
+}
+.reset_password .password_container .form-group.number_code {
+  margin: 0 0.5%;
+  width: 100%;
+}
+.reset_password .password_container .form-group.number_code input {
+  width: 15%;
+  display: inline-block;
+  height: 60px;
+  text-align: center;
+  font-size: 2rem;
+}
+.reset_password .password_container .form-group {
+  margin-bottom: 5%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.reset_password .password_container .form-group input[type="password"] {
+  padding-right: 6%;
+}
+
+.reset_password
+  .password_container
+  .form-group.number_code
+  input::-webkit-outer-spin-button,
+.reset_password
+  .password_container
+  .form-group.number_code
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.reset_password
+  .password_container
+  .form-group.number_code
+  input[type="number"] {
+  -moz-appearance: textfield;
+}
+.submit_login:hover {
+  background-color: transparent !important;
+  border: 1px solid var(--color-third) !important;
+  color: var(--color-third) !important;
+  transition: 0.7s ease-in-out;
+}

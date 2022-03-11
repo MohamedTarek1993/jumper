@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gamber</title>
+    <title>Jumbers</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -17,9 +17,6 @@
     <!-- dark mood -->
     <link rel="stylesheet" href="css/style-dark.css">
     <!-- dark mood -->
-    <!-- flag icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
-    <!-- flag icon -->
     <!-- animation -->
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <!-- animation -->
@@ -86,24 +83,14 @@
                     <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="content">
-                            <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
-                            <h6 href="#"> KSA</h6>
+                            <h6> العربية</h6>
                         </div>
                     </a>
                     <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
                         <li>
                             <a class="dropdown-item" href="#">
                                 <div class="content">
-                                    <span class="flag-icon flag-icon-us flag-icon-squared"></span>
                                     <h6>English</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="content">
-                                    <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
-                                    <h6 href="#"> Turkish</h6>
                                 </div>
                             </a>
                         </li>
@@ -111,10 +98,45 @@
                 </div>
                 <!-- lang dropdown -->
                 <!-- sign up -->
-                <div class="btn-sign trans">
+                <!-- <div class="btn-sign trans">
                     <a href="login.html">تسجيل الدخول</a>
+                </div> -->
+                <!-- في حالة تم تسجيل الدخول -->
+                <div class="dropdown dropdown-sign">
+                    <a class=" dropdown-toggle sign" href="#" role="button" id="dropdownMenuLink5"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="content">
+                            <h6>أحمد ابراهيم</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu selected-sign" aria-labelledby="dropdownMenuLink5">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-person-circle"></i>
+                                    <h6>حسابي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-view-list"></i>
+                                    <h6>طلباتي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    <h6>تسجيل الخروج</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
+                <!-- في حالة تم تسجيل الدخول -->
                 <!-- sign up -->
             </div>
         </div>
@@ -201,55 +223,67 @@
                                                     <!-- start tab content -->
                                                     <div class="tab-pane fade show active" id="pills-home"
                                                         role="tabpanel" aria-labelledby="pills-home-tab">
-                                                        <form class="form">
+                                                        <form class="form" data-aos="fade-up" data-aos-duration="1000">
                                                             <div class="input-group">
                                                                 <label class="form-label"> نشاط العمل </label>
-                                                                <select class="form-select"
+                                                                <select required class="form-select"
                                                                     aria-label="Default select example">
                                                                     <option selected>Open this select menu</option>
                                                                     <option value="1">One</option>
                                                                     <option value="2">Two</option>
                                                                     <option value="3">Three</option>
                                                                 </select>
+                                                                <span class="icon"><i
+                                                                        class="bi bi-card-heading"></i></span>
                                                             </div>
                                                             <div class="input-group">
                                                                 <label class="form-label"> القطاع </label>
-                                                                <select class="form-select"
+                                                                <select required class="form-select"
                                                                     aria-label="Default select example">
                                                                     <option selected>القطاع</option>
                                                                     <option value="1">One</option>
                                                                     <option value="2">Two</option>
                                                                     <option value="3">Three</option>
                                                                 </select>
+                                                                <span class="icon"><i
+                                                                        class="bi bi-credit-card-2-front"></i></span>
+
                                                             </div>
                                                             <div class="input-group">
                                                                 <label class="form-label" for="email-1">رقم السجل
                                                                     التجارى </label>
-                                                                <input type="number" id="email-1" class="form-control">
+                                                                <input required type="number" id="email-1"
+                                                                    class="form-control">
+                                                                <span class="icon"><i
+                                                                        class="bi bi-card-text"></i></span>
                                                             </div>
-                                                            <div class="input-group upload">
-                                                                <input class="file-input" type="file" name="file"
-                                                                    hidden>
-
-                                                                <i class="bi bi-cloud-upload"></i>
-                                                                <p> ارفع صورة للسجل التجاري</p>
-                                                                <section class="progress-area"></section>
-                                                                <section class="uploaded-area"></section>
+                                                            <!-- upload data -->
+                                                            <div class="input-group pt-4">
+                                                                <div class="file-upload-wrapper"
+                                                                    data-text="ارفع ملف CV الخاص بك">
+                                                                    <input required
+                                                                        name="file-upload-field form-control"
+                                                                        type="file" class="file-upload-field" value="">
+                                                                </div>
                                                             </div>
+                                                            <!-- upload data -->
                                                             <div class="input-group">
                                                                 <label class="form-label"> المدينة </label>
-                                                                <select class="form-select"
+                                                                <select required class="form-select"
                                                                     aria-label="Default select example">
                                                                     <option selected>المدينة</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">1</option>
                                                                     <option value="3">3</option>
                                                                 </select>
+                                                                <span class="icon"> <i class="bi bi-geo-alt"></i></span>
+
                                                             </div>
                                                             <div class="input-group">
                                                                 <label class="form-label"> العنوان بالتفصيل </label>
-                                                                <textarea class="form-control"
+                                                                <textarea required class="form-control"
                                                                     placeholder="أدخل العنوان بالتفصيل"></textarea>
+
                                                             </div>
                                                             <button onclick="successAlertSave()" id="sweetalert"
                                                                 class="btn-sign btn hvr-float-shadow">
@@ -258,32 +292,38 @@
                                                     </div>
                                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                                         aria-labelledby="pills-profile-tab">
-                                                        <form class="form">
+                                                        <form class="form" data-aos="fade-up" data-aos-duration="1000">
                                                             <div class="input-group">
                                                                 <label class="form-label"> نوع الهوية </label>
-                                                                <select class="form-select"
+                                                                <select required class="form-select"
                                                                     aria-label="Default select example">
                                                                     <option selected>نوع الهوية</option>
                                                                     <option value="1">1</option>
                                                                     <option value="2">2</option>
                                                                     <option value="3">3</option>
                                                                 </select>
+                                                                <span class="icon"> <i
+                                                                        class="bi bi-upc-scan"></i></span>
                                                             </div>
 
                                                             <div class="input-group">
                                                                 <label class="form-label" for="email-3"> رقم الهوية
                                                                 </label>
-                                                                <input type="number" id="email-3" class="form-control">
+                                                                <input required type="number" id="email-3"
+                                                                    class="form-control">
+                                                                <span class="icon"> <i
+                                                                        class="bi bi-clipboard2-minus"></i></span>
                                                             </div>
-                                                            <div class="input-group upload">
-                                                                <input class="file-input" type="file" name="file"
-                                                                    hidden>
-
-                                                                <i class="bi bi-cloud-upload"></i>
-                                                                <p> ارفع صورة للسجل التجاري</p>
-                                                                <section class="progress-area"></section>
-                                                                <section class="uploaded-area"></section>
+                                                            <!-- upload data -->
+                                                            <div class="input-group pt-4">
+                                                                <div class="file-upload-wrapper"
+                                                                    data-text="ارفع ملف CV الخاص بك">
+                                                                    <input required
+                                                                        name="file-upload-field form-control"
+                                                                        type="file" class="file-upload-field" value="">
+                                                                </div>
                                                             </div>
+                                                            <!-- upload data -->
 
 
                                                             <button onclick="successAlertSave()" id="sweetalert"
@@ -305,22 +345,25 @@
                                 aria-labelledby="v-pills-profile-tab">
                                 <div class="admin-responsable">
                                     <h2>بيانات المؤسسة</h2>
-                                    <form>
+                                    <form action="main.html">
                                         <div class="input-group">
                                             <label class="form-label" for="admin"> اسم المسئول
                                             </label>
-                                            <input type="text" id="admin" class="form-control">
+                                            <input required type="text" id="admin" class="form-control">
+                                            <span class="icon"><i class="bi bi-person-circle"></i></span>
                                         </div>
                                         <div class="input-group">
                                             <label class="form-label" for="email-4"> البريد الالكتروني
                                             </label>
-                                            <input type="text" id="email-4" class="form-control">
+                                            <input required type="text" id="email-4" class="form-control">
+                                            <span class="icon"><i class="bi bi-envelope"></i></span>
                                         </div>
                                         <div class="input-group">
                                             <label class="form-label"> رقم الجوال
                                             </label>
                                             <div class="col-lg-9 col-md-8 col-7">
-                                                <input type="text" id="email-4" class="form-control">
+                                                <input required type="text" id="email-4" class="form-control">
+                                                <span class="icon"> <i class="bi bi-phone"></i></span>
                                             </div>
                                             <div class="col-lg-3 col-md-4 col-5">
                                                 <select class="form-select" aria-label="Default select example">
@@ -339,6 +382,7 @@
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                             </select>
+                                            <span class="icon"> <i class="bi bi-shield"></i></i></span>
                                         </div>
                                         <div class="input-group">
                                             <label class="form-label"> ملاحظات اخري </label>
@@ -352,8 +396,8 @@
                                                 <a href="contract.html">العقد</a>
                                             </label>
                                         </div>
-                                        <a href="#" class="btn-sign btn hvr-float-shadow">
-                                            ابدأ الآن </a>
+                                        <button class="btn-sign btn hvr-float-shadow">
+                                            ابدأ الآن </button>
                                     </form>
                                 </div>
                             </div>
@@ -366,26 +410,26 @@
     </section>
     <!---------------------- finish data-complete -------------------------------------------->
     <!---------------------- start data-complete -------------------------------------------->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-12">
-                <ul>
-                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
-                    <li><a href="condition.html">الشروط والاحكام</a></li>
-                    <li><a href="common.html">الاسألة الشائعة</a></li>
-                    <li><a href="printer.html">شركاء النجاح</a></li>
-                    <li><a href="section.html"> القطاعات</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-5 col-12">
-                <div class="slug">
-                    <p>© 2021 All rights reserved</p>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <ul>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><a href="condition.html">الشروط والاحكام</a></li>
+                        <li><a href="common.html">الاسألة الشائعة</a></li>
+                        <li><a href="printer.html">شركاء النجاح</a></li>
+                        <li><a href="section.html"> القطاعات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-12">
+                    <div class="slug">
+                        <p>© 2021 All rights reserved</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
     <!---------------------- finish data-complete -------------------------------------------->
 
 
@@ -444,68 +488,9 @@
     <!-- upload img -->
     <!-- upload files -->
     <script>
-        const form = document.querySelector("form"),
-            fileInput = document.querySelector(".file-input"),
-            progressArea = document.querySelector(".progress-area"),
-            uploadedArea = document.querySelector(".uploaded-area");
-
-        form.addEventListener("click", () => {
-            fileInput.click();
+        $("form").on("change", ".file-upload-field", function () {
+            $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
         });
-
-        fileInput.onchange = ({ target }) => {
-            let file = target.files[0];
-            if (file) {
-                let fileName = file.name;
-                if (fileName.length >= 12) {
-                    let splitName = fileName.split('.');
-                    fileName = splitName[0].substring(0, 13) + "... ." + splitName[1];
-                }
-                uploadFile(fileName);
-            }
-        }
-
-        function uploadFile(name) {
-            let xhr = new XMLHttpRequest();
-            xhr.open("POST", "php/upload.php");
-            xhr.upload.addEventListener("progress", ({ loaded, total }) => {
-                let fileLoaded = Math.floor((loaded / total) * 100);
-                let fileTotal = Math.floor(total / 1000);
-                let fileSize;
-                (fileTotal < 1024) ? fileSize = fileTotal + " KB" : fileSize = (loaded / (1024 * 1024)).toFixed(2) + " MB";
-                let progressHTML = `<li class="row">
-                          <i class="bi bi-cloud-upload"></i>
-                          <div class="content">
-                            <div class="details">
-                              <span class="name">${name} • Uploading</span>
-                              <span class="percent">${fileLoaded}%</span>
-                            </div>
-                            <div class="progress-bar">
-                              <div class="progress" style="width: ${fileLoaded}%"></div>
-                            </div>
-                          </div>
-                        </li>`;
-                uploadedArea.classList.add("onprogress");
-                progressArea.innerHTML = progressHTML;
-                if (loaded == total) {
-                    progressArea.innerHTML = "";
-                    let uploadedHTML = `<li class="row">
-                            <div class="content upload">
-                              <i class="bi bi-file-check"></i>
-                              <div class="details">
-                                <span class="name">${name} • Uploaded</span>
-                                <span class="size">${fileSize}</span>
-                              </div>
-                            </div>
-                            <i class="bi bi-check"></i>
-                          </li>`;
-                    uploadedArea.classList.remove("onprogress");
-                    uploadedArea.insertAdjacentHTML("afterbegin", uploadedHTML);
-                }
-            });
-            let data = new FormData(form);
-            xhr.send(data);
-        }
     </script>
     <!-- upload files -->
     <!-- sweet alert for save -->
