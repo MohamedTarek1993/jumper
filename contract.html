@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> الطلبات القديمة </title>
+    <title> العقد  </title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -17,9 +17,6 @@
     <!-- dark mood -->
     <link rel="stylesheet" href="css/style-dark.css">
     <!-- dark mood -->
-    <!-- animation -->
-    <link rel="stylesheet" href="css/aos-anmite.css" />
-    <!-- animation -->
     <!-- sweet alert -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- sweet alert -->
@@ -33,19 +30,19 @@
     <div id="preloader"></div>
     <!---------------------- finish loader -------------------------------------------->
     <!---------------------- start scroll-up -------------------------------------------->
-    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <a id="button" class="scroll-up"><i class="bi bi-arrow-up-short"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
     <!---------------------- start dark && light mood -------------------------------------------->
-    <!-- <div id="toggle">
+    <div id="toggle">
         <span class="light " id="light">
-            <i class="bi bi-brightness-high" style=" color: #ff8800;"></i>
+            <i class="bi bi-brightness-high" style=" color: yellow;"></i>
         </span>
         <span class="dark" id="dark">
             <i class="bi bi-moon-fill "></i>
         </span>
         <div class="indicator">
         </div>
-    </div> -->
+    </div>
     <!---------------------- finish dark && light mood -------------------------------------------->
     <!---------------------- start navbar -------------------------------------------->
     <nav class="navbar navbar-expand-lg ">
@@ -140,7 +137,7 @@
     </nav>
     <!---------------------- finish navbar -------------------------------------------->
     <!---------------------- start order -------------------------------------------->
-    <section class="order">
+    <section class="order" style="height: 100vh;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-5 col-12">
@@ -154,7 +151,7 @@
                         </header>
                         <ul class="menu-side-bar">
                             <li class="side-item">
-                                <a class="side-link " href="main.html">
+                                <a class="side-link" href="main.html">
                                     <i class="bi bi-house-door"></i>
                                     الرئيسية
                                 </a>
@@ -165,8 +162,8 @@
                                     حسابي
                                 </a>
                             </li>
-                            <li class="side-item  ">
-                                <button class="dropdown-btn btn actives">
+                            <li class="side-item">
+                                <button class="dropdown-btn btn">
                                     <i class="bi bi-view-list"></i>
                                     الطلبات
                                     <span>
@@ -175,10 +172,10 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="order.html">انشاء طلب جديد</a>
+                                    <a class="side-link" href="create-order.html">انشاء طلب جديد</a>
                                     <a class="side-link " href="all-order.html">كل الطلبات </a>
                                     <a class="side-link" href="new-order.html">الطلبات الجديدة</a>
-                                    <a class="side-link active" href="old-order.html">الطلبات المنتهية</a>
+                                    <a class="side-link" href="old-order.html">الطلبات المنتهية</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
@@ -198,8 +195,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="#"> تواصل مع الادارة</a>
-                                    <a class="side-link" href="#"> غرف الدردشة</a>
+                                    <a class="side-link" href="chat-admin.html"> تواصل مع الادارة</a>
+                                    <a class="side-link" href="chat-room.html"> غرف الدردشة</a>
 
                                 </div>
                                 <!-- drop-menu -->
@@ -214,78 +211,25 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link " href="clerk.html"> الموظفين الحاليين </a>
-                                    <a class="side-link " href="ex-clerk.html"> الموظفين السابقين</a>
-                                    <!-- drop-menu -->
+                                    <a class="side-link" href="#"> الموظفين الحاليين </a>
+                                    <a class="side-link" href="#"> الموظفين السابقين</a>
+                                </div>
+                                <!-- drop-menu -->
                             </li>
                         </ul>
                     </div>
                     <!-- strat side bar -->
                 </div>
                 <div class="col-lg-9 col-md-7 col-12">
-                    <h2 class="head-categ">
-                        الطلبات الجديدة
-                    </h2>
-                    <div class="new-order">
-                        <div class="container">
-                            <!-- في حالة عدم وجود  طلب -->
-                            <!-- <div class="non-exist" data-aos="fade-up" data-aos-duration="1000">
-                                <lottie-player src="json/lf30_editor_boyshymo.json" background="transparent" speed="1"
-                                    style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-                                <h6>عذرا ! ليس لديك  طلب بعد </h6>
-                                <p>لم تقم بحفظ اى طلب في   
-                                    قم الآن بحفظ من تريد في القائمة للعودة اليه بكل سهولة في اى وقت</p>
-                                <a class="btn first" href="order.html">انشاء طلب جديد</a>
-                            </div>  -->
-                            <!-- في حالة عدم وجود  طلب -->
-                            <!-- في حالة  منتهي -->
-                            <div class="pattern" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="head" data-aos="fade-up" data-aos-duration="1000">
-                                    <p>رقم الطلب : #2515441221</p>
-                                    <p>تاريخ الطلب : فبراير 22 - 2022</p>
-                                    <div class="indection"> <span class="success"> طلب منتهي</span></div>
-                                </div>
-                                <div class="content">
-                                    <div class="info" data-aos="zoom-in-left" data-aos-duration="1000">
-                                        <h6 class="head-small ">مصممين واجهة مستخدم</h6>
-                                        <p> تاريخ بداية العمل <span> : فبراير 22 - 2022 </span></p>
-                                        <p> تاريخ نهاية العمل <span> : فبراير 22 - 2022 </span></p>
-                                        <p> عدد الجمبر <span> : 200 </span></p>
-                                        <p> التكلفة المفترضة <span> : 15ريال بالساعة </span></p>
-                                    </div>
-                                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1000">
-                                        <a target="_blank" class="first btn" href="show-order-new.html">عرض التفاصيل</a>
-                                        <button id="sweetalert" onclick="deleteAlert()" class="second btn"> أعادة
-                                            الطلب</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- في حالة طلب منتهي -->
-                            <!-- في حالة  طلب غير مكتمل -->
-                            <div class="pattern" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="head">
-                                    <p>رقم الطلب : #2515441221</p>
-                                    <p>تاريخ الطلب : فبراير 22 - 2022</p>
-                                    <div class="indection"> <span class="reject"> طلب غير مكتمل</span></div>
-                                </div>
-                                <div class="content">
-                                    <div class="info" data-aos="zoom-in-left" data-aos-duration="1000">
-                                        <h6 class="head-small ">مصممين واجهة مستخدم</h6>
-                                        <p> تاريخ بداية العمل <span> : فبراير 22 - 2022 </span></p>
-                                        <p> تاريخ نهاية العمل <span> : فبراير 22 - 2022 </span></p>
-                                        <p> عدد الجمبر <span> : 200 </span></p>
-                                        <p> التكلفة المفترضة <span> : 15ريال بالساعة </span></p>
-                                    </div>
-                                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1000">
-                                        <a target="_blank" class="first btn" href="show-order-pending.html">عرض
-                                            التفاصيل</a>
-                                        <button id="sweetalert" onclick="deleteAlert()" class="second btn">أعادة
-                                            الطلب</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- في حالة  طلب غير مكتمل -->
-                        </div>
+                    <h1 class="head-categ">شروط العقد</h1>
+                    <div class="content">
+                       <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                    </p>
+                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                    </p>
+                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                    </p>
+                    <button class="first btn w-50 mt-3"> موافق</button>
                     </div>
                 </div>
             </div>
@@ -307,15 +251,13 @@
                 </div>
                 <div class="col-lg-5 col-12">
                     <div class="slug">
-                        <p>© 2021 All rights reserved</p>
+                        <p>© 2022 All rights reserved</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!---------------------- finish footer -------------------------------------------->
-
-
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -324,55 +266,9 @@
     <!-- animation -->
     <script src="js/aos-anmite.js"></script>
     <script>
-        AOS.init({ disable: 'mobile' });
+        AOS.init();
     </script>
     <!-- animation -->
-    <!-- loottie -->
-    <script src="js/lottie.js"></script>
-    <!-- loottie -->
-    <!-- sweetalert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- sweetalert -->
-    <!-- sidebar -->
-    <script>
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "flex") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "flex";
-                    // dropdownContent.animate([{ opacity: '0.0' }, { opacity: '1.0' }],
-                    //     { duration: 1500, fill: 'forwards' })
-                }
-            });
-        }
-    </script>
-    <!-- sidebar -->
-    <script>
-        function deleteAlert() {
-            Swal.fire({
-                title: 'Are you sure rebuy this order?',
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, rebuy it!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire(
-                        'rebuy!',
-                        'Your order has been rebuied.',
-                        'success'
-                    )
-                }
-            })
-        }
-    </script>
 </body>
 
 </html>

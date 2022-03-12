@@ -83,24 +83,14 @@
                     <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="content">
-                            <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
-                            <h6 href="#"> KSA</h6>
+                            <h6> العربية</h6>
                         </div>
                     </a>
                     <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
                         <li>
                             <a class="dropdown-item" href="#">
                                 <div class="content">
-                                    <span class="flag-icon flag-icon-us flag-icon-squared"></span>
                                     <h6>English</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="content">
-                                    <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
-                                    <h6 href="#"> Turkish</h6>
                                 </div>
                             </a>
                         </li>
@@ -173,7 +163,7 @@
                                 </a>
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="account.html">
                                     <i class="bi bi-person-circle"></i>
                                     حسابي
                                 </a>
@@ -190,13 +180,13 @@
                                 <div class="dropdown-container">
                                     <a class="side-link" href="order.html">انشاء طلب جديد</a>
                                     <a class="side-link active" href="all-order.html">كل الطلبات </a>
-                                    <a class="side-link" href="#">الطلبات الجديدة</a>
-                                    <a class="side-link" href="#">الطلبات المنتهية</a>
+                                    <a class="side-link" href="new-order.html">الطلبات الجديدة</a>
+                                    <a class="side-link" href="old-order.html">الطلبات المنتهية</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="favourit.html">
                                     <i class="bi bi-heart"></i>
                                     المفضلة
                                 </a>
@@ -211,8 +201,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="#"> تواصل مع الادارة</a>
-                                    <a class="side-link" href="#"> غرف الدردشة</a>
+                                    <a class="side-link" href="chat-admin.html"> تواصل مع الادارة</a>
+                                    <a class="side-link" href="chat-room.html"> غرف الدردشة</a>
 
                                 </div>
                                 <!-- drop-menu -->
@@ -250,107 +240,126 @@
                         </div> -->
                         <!-- في حالة عدم وجود  طلبات -->
                         <!-- في حالة  وجود  طلبات -->
-
-                        <table class="table-responsive">
-                            <thead>
-                                <tr>
-                                    <td>رقم الطلب</td>
-                                    <td>تاريخ البداية</td>
-                                    <td>تاريخ النهاية</td>
-                                    <td>مدة العمل</td>
-                                    <td> عدد الجمبرز</td>
-                                    <td> التكلفة المفترضة</td>
-                                    <td> حالة الطلب</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- في حالة وجود طلب جديد -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="new"> طلب جديد</span> </td>
-                                    <td><a target="_blank" href="show-order-new.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود طلب جديد -->
-                                <!-- في حالة وجود طلب منهي -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="success"> طلب منتهي</span> </td>
-                                    <td><a target="_blank" href="show-order-success.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود طلب منهي -->
-                                <!-- في حالة وجود طلب غير مكتمل -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="uncoplete"> طلب غير مكتمل</span> </td>
-                                    <td><a target="_blank" href="show-order-pending.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود طلب غير مكتمل -->
-                                <!-- في حالة وجود  انتظار الدفع   -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="pending"> في انتظار الدفع </span> </td>
-                                    <td><a target="_blank" href="show-order-wait.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة وجود  انتظار الدفع   -->
-                                <!-- في حالة جاري المعالجة      -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="revision"> جاري المعالجة </span> </td>
-                                    <td><a target="_blank" href="show-order-revision.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة جاري المعالجة      -->
-                                <!-- في حالة  جاري العمل      -->
-                                <tr>
-                                    <td>#251422 </td>
-                                    <td>مارس22</td>
-                                    <td>ابريل22</td>
-                                    <td>شهرين</td>
-                                    <td>40</td>
-                                    <td>20ريال بالساعة </td>
-                                    <td> <span class="work"> جاري العمل </span> </td>
-                                    <td><a target="_blank" href="show-order-work.html"><i
-                                                class="bi bi-three-dots"></i></a></td>
-                                </tr>
-                                <!-- في حالة  جاري العمل      -->
-
-
-
-
-
-
-
-                            </tbody>
-                        </table>
+                   
+                            <table class="table-responsive table">
+                                <thead>
+                                    <tr>
+                                        <th>رقم الطلب</th>
+                                        <th>تاريخ البداية</th>
+                                        <th>تاريخ النهاية</th>
+                                        <th>مدة العمل</th>
+                                        <th> عدد الجمبرز</th>
+                                        <th> التكلفة المفترضة</th>
+                                        <th> حالة الطلب</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- في حالة وجود طلب جديد -->
+                                    <tr>
+                                        <td data-label="رقم الطلب">#251422 </td>
+                                        <td data-label="تاريخ البداية">
+                                            مارس22</td>
+                                        <td data-label="تاريخ النهاية">ابريل22</td>
+                                        <td data-label="مدة العمل">
+                                            شهرين</td>
+                                        <td data-label="عدد الجمبرز">
+                                            40</td>
+                                        <td data-label=" التكلفة المفترضة">
+                                            20ريال بالساعة </td>
+                                        <td data-label="حالة الطلب">
+                                             <span class="new"> طلب جديد</span> </td>
+                                        <td data-label=" أعرض التفاصيل"><a target="_blank" href="show-order-new.html"><i
+                                                    class="bi bi-three-dots"></i></a></td>
+                                    </tr>
+                                    <!-- في حالة وجود طلب جديد -->
+                                    <!-- في حالة وجود طلب منهي -->
+                                    <tr>
+                                        <td data-label="رقم الطلب">#251422 </td>
+                                        <td data-label="تاريخ البداية">
+                                            مارس22</td>
+                                        <td data-label="تاريخ النهاية">ابريل22</td>
+                                        <td data-label="مدة العمل">
+                                            شهرين</td>
+                                        <td data-label="عدد الجمبرز">
+                                            40</td>
+                                        <td data-label=" التكلفة المفترضة">
+                                            20ريال بالساعة </td>
+                                        <td data-label="حالة الطلب"> <span class="success"> طلب منتهي</span> </td>
+                                        <td data-label=" عرض التغاصيل"><a target="_blank" href="show-order-success.html"><i
+                                                    class="bi bi-three-dots"></i></a></td>
+                                    </tr>
+                                    <!-- في حالة وجود طلب منهي -->
+                                    <!-- في حالة وجود طلب غير مكتمل -->
+                                    <tr>
+                                        <td data-label="رقم الطلب">#251422 </td>
+                                        <td data-label="تاريخ البداية">
+                                            مارس22</td>
+                                        <td data-label="تاريخ النهاية">ابريل22</td>
+                                        <td data-label="مدة العمل">
+                                            شهرين</td>
+                                        <td data-label="عدد الجمبرز">
+                                            40</td>
+                                        <td data-label=" التكلفة المفترضة">
+                                            20ريال بالساعة </td>
+                                        <td data-label="حالة الطلب"> <span class="uncoplete"> طلب غير مكتمل</span> </td>
+                                        <td data-label="حالة الطلب"><a target="_blank" href="show-order-pending.html"><i
+                                                    class="bi bi-three-dots"></i></a></td>
+                                    </tr>
+                                    <!-- في حالة وجود طلب غير مكتمل -->
+                                    <!-- في حالة وجود  انتظار الدفع   -->
+                                    <tr>
+                                        <td data-label="رقم الطلب">#251422 </td>
+                                        <td data-label="تاريخ البداية">
+                                            مارس22</td>
+                                        <td data-label="تاريخ النهاية">ابريل22</td>
+                                        <td data-label="مدة العمل">
+                                            شهرين</td>
+                                        <td data-label="عدد الجمبرز">
+                                            40</td>
+                                        <td data-label=" التكلفة المفترضة">
+                                            20ريال بالساعة </td>
+                                        <td data-label="حالة الطلب"> <span class="pending"> في انتظار الدفع </span> </td>
+                                        <td data-label=" عرض التفاصيل"><a target="_blank" href="show-order-wait.html"><i
+                                                    class="bi bi-three-dots"></i></a></td>
+                                    </tr>
+                                    <!-- في حالة وجود  انتظار الدفع   -->
+                                    <!-- في حالة جاري المعالجة      -->
+                                    <tr>
+                                        <td data-label="رقم الطلب">#251422 </td>
+                                        <td data-label="تاريخ البداية">
+                                            مارس22</td>
+                                        <td data-label="تاريخ النهاية">ابريل22</td>
+                                        <td data-label="مدة العمل">
+                                            شهرين</td>
+                                        <td data-label="عدد الجمبرز">
+                                            40</td>
+                                        <td data-label=" التكلفة المفترضة">
+                                            20ريال بالساعة </td>
+                                        <td data-label="حالة الطلب"> <span class="revision"> جاري المعالجة </span> </td>
+                                        <td data-label=" عرض التفاصيل"><a target="_blank" href="show-order-revision.html"><i
+                                                    class="bi bi-three-dots"></i></a></td>
+                                    </tr>
+                                    <!-- في حالة جاري المعالجة      -->
+                                    <!-- في حالة  جاري العمل      -->
+                                    <tr>
+                                        <td data-label="رقم الطلب">#251422 </td>
+                                        <td data-label="تاريخ البداية">
+                                            مارس22</td>
+                                        <td data-label="تاريخ النهاية">ابريل22</td>
+                                        <td data-label="مدة العمل">
+                                            شهرين</td>
+                                        <td data-label="عدد الجمبرز">
+                                            40</td>
+                                        <td data-label=" التكلفة المفترضة">
+                                            20ريال بالساعة </td>
+                                        <td data-label="حالة الطلب"> <span class="work"> جاري العمل </span> </td>
+                                        <td data-label="عرض  التفاصيل"><a target="_blank" href="show-order-work.html"><i
+                                                    class="bi bi-three-dots"></i></a></td>
+                                    </tr>
+                                    <!-- في حالة  جاري العمل      -->
+                                </tbody>
+                            </table>
+                        
                     </div>
                     <!---------------------------- pagination ------------------------------->
                     <nav class=" bg-white pb-3 pt-5 mb-4" aria-label="Page navigation example">

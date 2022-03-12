@@ -5,7 +5,7 @@
   --color-secound: #0c1321;
   --color-third: #1b312e;
   --color-fourth: #bf8c6d;
-  --color-fifth: #8F92A1;
+  --color-fifth: #8f92a1;
   --color-sixth: #2e2c34;
 }
 @font-face {
@@ -95,11 +95,12 @@ ul {
 .form-check-input:focus,
 .form-check :focus,
 .btn-check:focus + .btn,
-.btn-close:focus {
+.btn-close:focus,
+.accordion-button:focus {
   box-shadow: none;
 }
 .form-control::placeholder {
-  color: var(--color-third) !important;
+  color: var(--color-secound) !important;
   font-family: "regular" !important;
 }
 input[type="data"] {
@@ -241,6 +242,7 @@ input::-webkit-inner-spin-button {
   font-size: 32px;
   font-family: "semibold";
   color: var(--color-secound);
+  margin-top: 3%;
 }
 .head-small {
   font-size: 22px;
@@ -248,6 +250,21 @@ input::-webkit-inner-spin-button {
   color: var(--color-secound);
   padding: 1% 3% 2%;
 }
+/* scroll bar */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* scroll bar */
 /* cleander */
 .pop-celander {
   width: 100%;
@@ -1255,9 +1272,9 @@ footer .slug p {
   opacity: 0.5;
 }
 #uploadBtn h6 {
-  font-size: 14px;
+  font-size: 13px;
   margin: auto;
-  padding-top: 8%;
+  padding-top: 11%;
 }
 /* upload */
 .data-coplete-tab .kind {
@@ -1628,6 +1645,7 @@ form .file-upload-wrapper input {
   border-radius: 10px;
   transition: 0.25s all ease;
   border-color: transparent;
+  margin-bottom: 4%;
 }
 .order .main .card:hover {
   transform: scale(1.07);
@@ -1651,6 +1669,10 @@ form .file-upload-wrapper input {
 .order .statistics {
   margin-top: 5%;
 }
+#myChart{
+  background-color: white;
+  border-radius: 8px;
+}
 .order .statistics .chart {
   display: flex;
   justify-content: center;
@@ -1659,6 +1681,7 @@ form .file-upload-wrapper input {
   width: 100%;
   background-color: white;
   padding: 4% 2%;
+  border-radius: 8px;
 }
 .order .statistics .chart h6 {
   font-family: "semibold";
@@ -1757,31 +1780,39 @@ form .file-upload-wrapper input {
   font-size: 32px;
   font-family: "semibold";
 }
-.all-order table {
+.all-order .table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
   background-color: white;
 }
-.all-order table thead td {
-  font-family: "semibold";
-  font-size: 18px;
-  text-align: center;
-  padding: 1% 0;
-}
-.all-order table tbody td {
-  font-family: "regular";
-  font-size: 12px;
-  padding: 12px;
-  color: var(--color-sixth);
-}
-.all-order table tbody td span {
+.all-order .table tbody td span {
   font-size: 10px;
   padding: 2% 6%;
   border-radius: 13px;
 }
-.all-order table tr td {
+.all-order .table td {
+  border: none;
   text-align: center;
+  font-family: "regular";
+  font-size: 12px;
+  padding: 20px;
+  color: var(--color-sixth);
+}
+.all-order .table tbody tr{
+  border-bottom: 1px solid #8f92a1;
+}
+.all-order .table tbody tr:last-child{
+  border-bottom: none;
+}
+.all-order .table th {
+  background-color: white;
+  color: var(--color-secound);
+  border: none;
+  font-size: 20px;
+}
+.all-order .table tbody tr:nth-child(even) {
+  background-color: white;
 }
 /* finish all order  */
 /* start show order */
@@ -2071,6 +2102,7 @@ nav {
 .clark-section {
   background-color: white;
   margin: 4% 0;
+  border-radius: 8px;
 }
 .clark-section .head {
   display: flex;
@@ -2081,9 +2113,10 @@ nav {
 }
 .clark-section .head .info {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   flex-direction: row;
+  width: 50%;
 }
 .clark-section .head .info img {
   width: 50px;
@@ -2471,7 +2504,6 @@ nav {
 }
 .order .contact-pepole .pepole {
   margin: 4% 0;
-  padding: 0 3%;
 }
 .order .contact-pepole .pepole h6 {
   font-size: 14px;
@@ -2490,13 +2522,253 @@ nav {
   align-items: center;
   justify-content: start;
   margin: 10% 0;
+  transition: 0.25s all ease-in-out;
+}
+.order .contact-pepole .pepole ul li.active,
+.order .contact-pepole .pepole ul li:hover {
+  background-color: rgba(191, 140, 109, 0.3);
+  border-radius: 5px;
+  padding: 3% 2%;
 }
 .order .contact-pepole .pepole ul li img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-left: 4%;
+  transition: 0.25s all ease-in-out;
 }
+.order .contact-pepole .pepole ul li.active img,
+.order .contact-pepole .pepole ul li:hover img {
+  background-color: white;
+  padding: 2%;
+}
+.order .contact-pepole .pepole ul li.active h6,
+.order .contact-pepole .pepole ul li:hover h6 {
+  color: white;
+}
+.order .contact-pepole .pepole ul li span {
+  margin-right: 44%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px;
+  font-family: "light";
+  color: var(--color-secound);
+}
+/* chat */
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f1f0e8;
+  overflow-y: scroll;
+  margin: 10% 0;
+  border-radius: 8px;
+}
+.chat-header {
+  display: flex;
+  cursor: pointer;
+}
+.chat .profile {
+  width: 100%;
+  background: var(--color-fourth);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 10px;
+  position: relative;
+}
+.chat .profile .pp {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 4px;
+  margin-bottom: 7%;
+}
+.chat .profile .bi-arrow-right {
+  display: inline-block;
+  width: 30px;
+  cursor: pointer;
+  color: white;
+}
+.chat .profile h2 {
+  display: inline-block;
+  line-height: 60px;
+  vertical-align: bottom;
+  font-family: "regular";
+  color: #fff;
+  font-size: 20px;
+}
+.chat .profile span {
+  color: var(--color-third);
+  position: absolute;
+  top: 37px;
+  right: 106px;
+  font-size: 14px;
+  font-family: "light";
+}
+.chat .rgt i {
+  color: white;
+  width: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.chat.profile .lft {
+  flex: 1;
+}
+
+.chat-box {
+  background: url("../image/bg.jpeg");
+  background-attachment: fixed;
+  padding-left: 20px;
+  overflow-y: scroll;
+  flex: 1;
+}
+.chat-box .img_chat {
+  width: 280px;
+  height: 60px;
+}
+
+.chat-r {
+  display: flex;
+  animation: show-r 1s linear;
+}
+@keyframes show-r {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.chat-r .sp {
+  flex: 1;
+}
+
+.chat-l {
+  display: flex;
+  padding-right: 5%;
+  animation: show-l 1s linear;
+}
+@keyframes show-l {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.chat-l .sp {
+  flex: 1;
+}
+
+.chat-box .mess {
+  max-width: 300px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.chat-box .mess p {
+  word-break: break-all;
+  font-size: 18px;
+  margin-bottom: 0;
+  font-family: "meduim";
+}
+.chat-box .mess i {
+  color: blue;
+}
+.chat-box .mess-r {
+  background: rgb(191, 140, 109, 0.7);
+  color: white;
+}
+.chat-box .mess-r span {
+  color: white !important;
+}
+.chat-box .check {
+  float: left;
+}
+
+.chat-box .check span {
+  color: #888;
+  font-size: 12px;
+  font-weight: 700px;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb {
+  background: #aaa;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.chat-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  position: relative;
+  cursor: pointer;
+}
+.chat-footer textarea {
+  display: block;
+  flex: 1;
+  width: 100%;
+  height: 55px;
+  border-radius: 60px;
+  margin: 5px 9px 10px 11px;
+  padding: 10px 40px 10px 90px;
+  outline: none;
+  font-size: 19px;
+  border: 2px solid #ccc;
+  color: var(--color-fourth);
+  resize: none;
+  font-family: "light";
+}
+.chat-footer .mic {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(191, 140, 109, 0.7);
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+}
+
+.chat-footer .emo {
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  font-size: 21px;
+}
+.chat-footer .icons {
+  position: absolute;
+  left: 59px;
+  top: 12px;
+}
+.chat-footer .icons i {
+  font-size: 25px;
+}
+/* chat */
 /* finish chat room page  */
 /* start account page */
 .order .account {
@@ -2509,7 +2781,7 @@ nav {
   margin: 3% 0;
 }
 .order .account .profile-pic-div {
-  left: 2%;
+  left: -2%;
 }
 .order .account #uploadBtn {
   left: 59%;
@@ -2631,43 +2903,43 @@ input[type="number"] {
 }
 /* ======= reset_password ======= */
 /* table in attend */
-.table-work p{
+.table-work p {
   margin-bottom: 0;
   font-size: 15px;
-  font-family: 'semibold';
-  color: var(--color-sixth);
+  font-family: "semibold";
+  color: white;
 }
-.table-work{
+.table-work {
   margin: 2% 0;
   width: 1000px;
 }
-.table-work thead td span{
+.table-work thead td span {
   font-size: 12px;
-  font-family: 'light';
-  color:#8F92A1 ;
+  font-family: "light";
+  color: #8f92a1;
 }
-.table-work thead td:first-child{
+.table-work thead td:first-child {
   text-align: start;
   width: 254px;
 }
-.table-work .name{
+.table-work .name {
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.table-work tbody td{
+.table-work tbody td {
   text-align: center;
   position: relative;
 }
-.table-work .bi-x{
+.table-work .bi-x {
   font-size: 22px;
-  color: #EC5555;
+  color: #ec5555;
 }
-.table-work .bi-check2{
+.table-work .bi-check2 {
   font-size: 22px;
   color: var(--color-primary);
 }
-.table-work tbody td .hint{
+.table-work tbody td .hint {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2677,17 +2949,17 @@ input[type="number"] {
   border: 1px solid transparent;
   box-shadow: 0px 3px 24px rgba(134, 134, 134, 0.16);
   padding: 1% 2%;
-  transition: .25s all ease;
+  transition: 0.25s all ease;
   display: none;
 }
-.table-work tbody td .hint p{
-  font-size:11px;
+.table-work tbody td .hint p {
+  font-size: 11px;
 }
-.table-work tbody td .hint span{
- font-size: 9px;
- color: #8F92A1;
+.table-work tbody td .hint span {
+  font-size: 9px;
+  color: #8f92a1;
 }
-.table-work tbody td .hint::before{
+.table-work tbody td .hint::before {
   content: "";
   top: 3px;
   right: 2px;
@@ -2696,7 +2968,85 @@ input[type="number"] {
   width: 3px;
   background-color: var(--color-fourth);
 }
-.table-work tbody td .holiday::before{
-  background-color:#EC5555 !important;
+.table-work tbody td .holiday::before {
+  background-color: #ec5555 !important;
 }
+.modal-celander .modal-dialog {
+  min-width: 700px;
+}
+.modal-celander .modal-header {
+  border-bottom: none;
+}
+.modal-header .btn-close {
+  margin: 0;
+}
+.modal-celander .modal-footer {
+  border-top: none;
+  justify-content: center;
+}
+.modal-celander .modal-footer .btn {
+  width: 30%;
+}
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table th {
+  background-color: var(--color-fourth);
+  color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #8f92a1;
+  color: white;
+}
+
 /* table in attend */
+/* start common page */
+.common-answer {
+  padding: 10% 5%;
+}
+.common-answer h2 {
+  text-align: center;
+  font-family: "bold";
+  margin-bottom: 5%;
+}
+.common-answer .accordion-item {
+  margin-bottom: 3%;
+  border: 1px solid var(--color-secound);
+  font-family: "light";
+  font-size: 14px;
+}
+.common-answer .accordion-item p {
+  font-family: "light";
+  font-size: 14px;
+}
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/></svg>');
+}
+.accordion-button.collapsed::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/></svg>');
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/></svg>');
+}
+.accordion-button:not(.collapsed) {
+  color: var(--color-fourth);
+  background-color: white;
+}
+.content p {
+  font-family: "regular";
+}
+/* finish common page */

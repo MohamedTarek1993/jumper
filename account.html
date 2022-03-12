@@ -17,9 +17,6 @@
     <!-- dark mood -->
     <link rel="stylesheet" href="css/style-dark.css">
     <!-- dark mood -->
-    <!-- flag icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
-    <!-- flag icon -->
     <!-- animation -->
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <!-- animation -->
@@ -39,7 +36,7 @@
     <a id="button" class="scroll-up"><i class="bi bi-arrow-up-short"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
     <!---------------------- start dark && light mood -------------------------------------------->
-    <div id="toggle">
+    <!-- <div id="toggle">
         <span class="light " id="light">
             <i class="bi bi-brightness-high" style=" color: yellow;"></i>
         </span>
@@ -48,7 +45,7 @@
         </span>
         <div class="indicator">
         </div>
-    </div>
+    </div> -->
     <!---------------------- finish dark && light mood -------------------------------------------->
     <!---------------------- start navbar -------------------------------------------->
     <nav class="navbar navbar-expand-lg ">
@@ -83,24 +80,14 @@
                     <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="content">
-                            <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
-                            <h6 href="#"> KSA</h6>
+                            <h6> العربية</h6>
                         </div>
                     </a>
                     <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
                         <li>
                             <a class="dropdown-item" href="#">
                                 <div class="content">
-                                    <span class="flag-icon flag-icon-us flag-icon-squared"></span>
                                     <h6>English</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="content">
-                                    <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
-                                    <h6 href="#"> Turkish</h6>
                                 </div>
                             </a>
                         </li>
@@ -108,10 +95,45 @@
                 </div>
                 <!-- lang dropdown -->
                 <!-- sign up -->
-                <div class="btn-sign trans">
+                <!-- <div class="btn-sign trans">
                     <a href="login.html">تسجيل الدخول</a>
+                </div> -->
+                <!-- في حالة تم تسجيل الدخول -->
+                <div class="dropdown dropdown-sign">
+                    <a class=" dropdown-toggle sign" href="#" role="button" id="dropdownMenuLink5"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="content">
+                            <h6>أحمد ابراهيم</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu selected-sign" aria-labelledby="dropdownMenuLink5">
+                        <li>
+                            <a class="dropdown-item" href="account.html">
+                                <div class="content">
+                                    <i class="bi bi-person-circle"></i>
+                                    <h6>حسابي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="all-order.html">
+                                <div class="content">
+                                    <i class="bi bi-view-list"></i>
+                                    <h6>طلباتي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    <h6>تسجيل الخروج</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
+                <!-- في حالة تم تسجيل الدخول -->
                 <!-- sign up -->
             </div>
         </div>
@@ -161,7 +183,7 @@
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="favourit.html">
                                     <i class="bi bi-heart"></i>
                                     المفضلة
                                 </a>
@@ -176,8 +198,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="#"> تواصل مع الادارة</a>
-                                    <a class="side-link" href="#"> غرف الدردشة</a>
+                                    <a class="side-link" href="chat-admin.html"> تواصل مع الادارة</a>
+                                    <a class="side-link" href="chat-room.html"> غرف الدردشة</a>
 
                                 </div>
                                 <!-- drop-menu -->
@@ -192,8 +214,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="#"> الموظفين الحاليين </a>
-                                    <a class="side-link" href="#"> الموظفين السابقين</a>
+                                    <a class="side-link" href="ex-clerk.html"> الموظفين الحاليين </a>
+                                    <a class="side-link" href="clerk.html"> الموظفين السابقين</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
@@ -203,7 +225,7 @@
                 </div>
                 <div class="col-lg-9 col-md-7 col-12">
                     <h1 class="head-categ head-main">حسابي</h1>
-                    <div class="account"  data-aos="fade-up" data-aos-duration="900">
+                    <div class="account" data-aos="fade-up" data-aos-duration="900">
                         <h2 class="head-categ">بيانات الحساب</h2>
                         <div class="info">
                             <div class="container">
@@ -221,7 +243,7 @@
                                             </label>
                                         </div>
                                         <!-- upload -->
-                                        <h2 class="head-categ">بيانات العمل</h2>
+                                        <h2 class="head-small">بيانات العمل</h2>
                                     </div>
                                     <div class="col-lg-10 col-12">
                                         <form action="">
@@ -230,17 +252,18 @@
                                                 <div class="input-group">
                                                     <label class="form-label" for="admin"> اسم الشركة
                                                     </label>
-                                                    <input type="text" id="admin" class="form-control">
+                                                    <input type="text" id="admin" class="form-control"
+                                                        placeholder="الشركة السعودية للعلوم والتكنولوجيا">
                                                     <span class="icon"> <i class="bi bi-clipboard-data"></i></span>
                                                 </div>
                                                 <div class="input-group">
                                                     <label class="form-label" for="email"> البريد الالكتروني
                                                     </label>
-                                                    <input type="email" id="email" class="form-control">
+                                                    <input type="email" id="email" class="form-control" placeholder="name@domain.com">
                                                     <span class="icon"><i class="bi bi-envelope"></i></span>
                                                 </div>
                                                 <div class="input-group">
-                                                    <label class="form-label" for="number">  رقم الجوال
+                                                    <label class="form-label" for="number"> رقم الجوال
                                                     </label>
                                                     <div class="col-8 col-lg-10 ">
                                                         <input type="number" id="number" class="form-control">
@@ -311,7 +334,8 @@
                                                 </div>
                                             </div>
                                             <!-- finish input group -->
-                                            <button onclick="successAlert()" id="sweetalert" class="first btn">حفظ التغييرات</button>
+                                            <button onclick="successAlert()" id="sweetalert" class="first btn">حفظ
+                                                التغييرات</button>
                                         </form>
                                     </div>
                                 </div>

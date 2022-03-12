@@ -178,6 +178,17 @@
     left: 23%;
     bottom: -7%;
   }
+  .order  .content .input-group .icon {
+    top: 30%;
+    right: 2%;
+  }
+  .order  .content .input-group .icont{
+    top: 80%;
+    right: 2%;
+  } 
+  .order .content .new-form .form-step-active .form-select{
+    margin-bottom: 1%;
+  }
   /* finish show order */
   /* start rejected clerk page */
   .clark-section .head {
@@ -263,6 +274,29 @@
     margin: 2% 0;
   }
   /* finish account page */
+  /* start chat room page */
+  .order .contact-pepole .search {
+    padding: 3% 1%;
+  }
+  .order .contact-pepole .pepole h6 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .order .contact-pepole .pepole ul {
+    margin: 1% 0;
+  }
+  .order .contact-pepole .pepole ul li {
+    margin: 7% 0;
+  }
+  .chat-footer textarea::-webkit-scrollbar {
+    display: none;
+  }
+  /* finish chat room page */
+  /* celander */
+  .celander {
+    width: 327px;
+  }
+  /* celander */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -358,6 +392,14 @@
     font-size: 11px;
     margin-bottom: 2%;
   }
+  .order  .content .input-group .icon {
+    top: 30%;
+    right: 2%;
+  }
+  .order  .content .input-group .icont{
+    top: 80%;
+    right: 2%;
+  } 
   .order .show-order .adress p {
     width: 89%;
   }
@@ -397,12 +439,7 @@
   }
   /* finish profile clerk page */
   /* tabel */
-  .all-order table thead td {
-    font-size: 14px;
-  }
-  .all-order table tbody td {
-    font-size: 11px;
-  }
+
   /* tabel */
   /* start new order page */
   .order .pattern .head p {
@@ -454,48 +491,46 @@
   }
   /* finish data complete */
   /* start account page */
-  .order .account .profile-pic-div{
+  .order .account .profile-pic-div {
     left: -7%;
   }
-  .order .account .head-categ{
+  .order .account .head-categ {
     font-size: 23px;
   }
-  .order .account h2:last-child{
+  .order .account h2:last-child {
     margin-top: 322%;
   }
   /* finish account page */
 }
 @media (max-width: 1000px) {
   /* responsive tabel */
-  .tabel-cand thead {
+  .table thead {
     display: none;
   }
-  .tabel-cand,
-  .tabel-cand tbody,
-  .tabel-cand tr,
-  .tabel-cand td {
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
     display: block;
     width: 100%;
   }
-  .tabel-can tr {
+  .table tr {
     margin-bottom: 15px;
   }
-  .tabel-can tbody td {
-    padding-left: 50%;
-    text-align: left;
+  .table td {
+    text-align: left !important;
+    padding-right: 50%;
     position: relative;
   }
-  .tabel-can tbody td:before {
+  .table td::before {
     content: attr(data-label);
     position: absolute;
     right: 0;
-    width: 50%;
-    padding-right: 15px;
-    font-size: 20px;
-    text-align: right;
-  }
-  .tabel-cand tbody tr .case {
-    padding: 1% 4%;
+    width: 31%;
+    font-size: 15px;
+    text-align: left;
+    color: #bf8c6d;
   }
   /* responsive tabel */
 }

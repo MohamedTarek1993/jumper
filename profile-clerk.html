@@ -17,9 +17,6 @@
     <!-- dark mood -->
     <link rel="stylesheet" href="css/style-dark.css">
     <!-- dark mood -->
-    <!-- flag icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
-    <!-- flag icon -->
     <!-- animation -->
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <!-- animation -->
@@ -42,7 +39,7 @@
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
     <!---------------------- start dark && light mood -------------------------------------------->
-    <div id="toggle">
+    <!-- <div id="toggle">
         <span class="light " id="light">
             <i class="bi bi-brightness-high" style=" color: #F2E938;"></i>
         </span>
@@ -51,7 +48,7 @@
         </span>
         <div class="indicator">
         </div>
-    </div>
+    </div> -->
     <!---------------------- finish dark && light mood -------------------------------------------->
     <!---------------------- start navbar -------------------------------------------->
     <nav class="navbar navbar-expand-lg ">
@@ -86,24 +83,14 @@
                     <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="content">
-                            <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
-                            <h6 href="#"> KSA</h6>
+                            <h6> العربية</h6>
                         </div>
                     </a>
                     <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
                         <li>
                             <a class="dropdown-item" href="#">
                                 <div class="content">
-                                    <span class="flag-icon flag-icon-us flag-icon-squared"></span>
                                     <h6>English</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="content">
-                                    <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
-                                    <h6 href="#"> Turkish</h6>
                                 </div>
                             </a>
                         </li>
@@ -111,10 +98,45 @@
                 </div>
                 <!-- lang dropdown -->
                 <!-- sign up -->
-                <div class="btn-sign trans">
+                <!-- <div class="btn-sign trans">
                     <a href="login.html">تسجيل الدخول</a>
+                </div> -->
+                <!-- في حالة تم تسجيل الدخول -->
+                <div class="dropdown dropdown-sign">
+                    <a class=" dropdown-toggle sign" href="#" role="button" id="dropdownMenuLink5"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="content">
+                            <h6>أحمد ابراهيم</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu selected-sign" aria-labelledby="dropdownMenuLink5">
+                        <li>
+                            <a class="dropdown-item" href="account.html">
+                                <div class="content">
+                                    <i class="bi bi-person-circle"></i>
+                                    <h6>حسابي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="all-order.html">
+                                <div class="content">
+                                    <i class="bi bi-view-list"></i>
+                                    <h6>طلباتي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    <h6>تسجيل الخروج</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
+                <!-- في حالة تم تسجيل الدخول -->
                 <!-- sign up -->
             </div>
         </div>
@@ -141,13 +163,13 @@
                                 </a>
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="account.html">
                                     <i class="bi bi-person-circle"></i>
                                     حسابي
                                 </a>
                             </li>
-                            <li class="side-item  ">
-                                <button class="dropdown-btn btn  ">
+                            <li class="side-item ">
+                                <button class="dropdown-btn btn">
                                     <i class="bi bi-view-list"></i>
                                     الطلبات
                                     <span>
@@ -156,15 +178,15 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="order.html">انشاء طلب جديد</a>
+                                    <a class="side-link" href="create-order.html">انشاء طلب جديد</a>
                                     <a class="side-link  " href="all-order.html">كل الطلبات </a>
-                                    <a class="side-link" href="#">الطلبات الجديدة</a>
-                                    <a class="side-link" href="#">الطلبات المنتهية</a>
+                                    <a class="side-link" href="new-order.html">الطلبات الجديدة</a>
+                                    <a class="side-link" href="old-order.html">الطلبات المنتهية</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="favourit.html">
                                     <i class="bi bi-heart"></i>
                                     المفضلة
                                 </a>
@@ -179,8 +201,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="#"> تواصل مع الادارة</a>
-                                    <a class="side-link" href="#"> غرف الدردشة</a>
+                                    <a class="side-link" href="chat-admin.html"> تواصل مع الادارة</a>
+                                    <a class="side-link" href="chat-room.html"> غرف الدردشة</a>
 
                                 </div>
                                 <!-- drop-menu -->
@@ -479,7 +501,7 @@
                                     <lottie-player src="json/lf30_editor_tv0a4st4.json" background="transparent"
                                         speed=".5" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
                                     <h6> هل انت حقا تريد انهاء العمل مع هذا الموظف ؟</h6>
-                                    <input type="text" class="form-control" placeholder="أدخل السبب "></input>
+                                    <input required type="text" class="form-control" placeholder="أدخل السبب "></input>
                                     <div class="py-3 full text-center">
                                         <button class="btn first"> ارسال </button>
                                         <button type="button" class="btn second" data-bs-dismiss="modal">لا</button>
@@ -507,21 +529,19 @@
                     <!---------------------- start confirm -------------------------------------------->
                     <form class="form-extension">
                         <div class="container">
-
                             <!-- first step -->
                             <div class="form-step-extension form-step-extension-active ">
                                 <div class="show ">
-
                                     <h6> من فضلك قم باستكمال البيانات التالية لتمديد
                                         العمل للموظف </h6>
                                     <div class="input-group">
                                         <label for="duration" class="form-label">المدة المضافة</label>
-                                        <input type="text" id="duration" class="form-control">
+                                        <input required type="text" id="duration" class="form-control">
                                         <span class="icon"> <i class="bi bi-clock"></i></span>
                                     </div>
                                     <div class="input-group">
                                         <label class="form-label"> نوع الدوام</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select required class="form-select" aria-label="Default select example">
                                             <option selected>اختر نوع الدوام</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -532,7 +552,7 @@
                                     <div class="input-group">
                                         <label class="form-label"> وقت الدوام</label>
                                         <div class="col-lg-6 col-12 my-3">
-                                            <select class="form-select" aria-label="Default select example">
+                                            <select required class="form-select" aria-label="Default select example">
                                                 <option selected> من</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -540,7 +560,7 @@
                                             </select>
                                         </div>
                                         <div class="col-lg-6 col-12 my-sm-3">
-                                            <select class="form-select" aria-label="Default select example">
+                                            <select required class="form-select" aria-label="Default select example">
                                                 <option selected> الي</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -599,9 +619,8 @@
                                     </ul>
                                 </div>
                                 <div class="py-3 full text-center w-100">
-                                    <button class="btn first"> حفظ </button>
+                                    <button type="submit" class="btn first"> حفظ </button>
                                 </div>
-
                             </div>
                             <!-- second step -->
                         </div>
