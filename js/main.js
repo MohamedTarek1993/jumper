@@ -45,15 +45,24 @@ const logoDark = document.getElementById('logoDark');
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('darkmode');
-  // 2. Update darkMode in localStorage
+   // 2. toggle classes
+  dark.style.display = "none";
+  light.style.display = "block";
+  // 3. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
+ 
+  
 }
-
 const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('darkmode');
-  // 2. Update darkMode in localStorage 
+       // 2. toggle classes
+
+  light.style.display = "none";
+  dark.style.display = "block";
+  // 3. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
+  
 }
 
 // If the user already visited and enabled darkMode
@@ -61,28 +70,33 @@ const disableDarkMode = () => {
 if (darkMode === 'enabled') {
   enableDarkMode();
 }
- // toggle icon
+// toggle icon
 // When someone clicks the button
 darkModeToggle.addEventListener('click', () => {
   // get their darkMode setting
   darkMode = localStorage.getItem('darkMode');
   logoLight.style.display = "block";
-   logoDark.style.display = "none";
-    dark.style.display="block";
-    light.style.display="none";
+  logoDark.style.display = "none";
+  //  light.style.display="block";
+  //  dark.style.display="none";
+
 
   // if it not current enabled, enable it
   if (darkMode !== 'enabled') {
     enableDarkMode();
     // if it has been enabled, turn it off  
     logoLight.style.display = "none";
-     logoDark.style.display = "block";
-     dark.style.display="none";
-     light.style.display="block";
- 
-     
+    logoDark.style.display = "block";
+    //  dark.style.display="block";
+    //  light.style.display="none";
+
+
   } else {
     disableDarkMode();
+    // dark.style.display="block";
+    // light.style.display="none";
+    // dark.style.display="none";
+
   }
 });
 

@@ -7,37 +7,35 @@
   --color-fourth: #bf8c6d;
   --color-fifth: #8f92a1;
   --color-sixth: #2e2c34;
-  --color-seven:#656369;
-  --color-light: #F7F7F7;
+  --color-seven: #656369;
+  --color-light: #f7f7f7;
   --color-dark: #00332a;
   --foreground: var(--color-secound);
   --background: var(--color-light);
-  --background2:#fff;
-  --backgroundfirstbtn:var(--color-third);
-  --colorfirstbtn:#fff;
-  --iconcolor:#2e2c34;
-  --colorsecondbtn:var(--color-third);
-  --backgroundsecondbtn:#fff;
+  --background2: #fff;
+  --backgroundfirstbtn: var(--color-third);
+  --colorfirstbtn: #fff;
+  --iconcolor: #2e2c34;
+  --colorsecondbtn: var(--color-third);
+  --backgroundsecondbtn: #fff;
 }
 .darkmode {
-  --color-light:#0c1321 ;
+  --color-light: #0c1321;
   --color-dark: #050505;
   --color-primary: #fff;
   --color-secound: #fff;
   --color-third: #1b312e;
   --color-fourth: #bf8c6d;
   --color-sixth: #fff;
-  --color-seven:#fff;
+  --color-seven: #fff;
   --foreground: #fff;
   --background: var(--color-dark);
-  --background2:#3E3E3E;
-  --backgroundfirstbtn:#fff;
-  --colorfirstbtn:var(--color-third);
-  --iconcolor:#bf8c6d;
-  --backgroundsecondbtn:#050505;
-  --colorsecondbtn:#fff;
-
-
+  --background2: #3e3e3e;
+  --backgroundfirstbtn: #fff;
+  --colorfirstbtn: var(--color-third);
+  --iconcolor: #bf8c6d;
+  --backgroundsecondbtn: #050505;
+  --colorsecondbtn: #fff;
 }
 @font-face {
   font-family: "light";
@@ -122,7 +120,7 @@ ul {
   background-position: left;
   position: relative;
 }
-.form-control:focus{
+.form-control:focus {
   color: var(--iconcolor);
 }
 .form-control:focus,
@@ -194,7 +192,7 @@ input::-webkit-inner-spin-button {
 .icon i {
   color: var(--iconcolor);
 }
-.icont i{
+.icont i {
   color: var(--iconcolor);
 }
 .first {
@@ -210,7 +208,7 @@ input::-webkit-inner-spin-button {
   color: var(--backgroundfirstbtn);
 }
 .second {
-  background-color:var(--backgroundsecondbtn);
+  background-color: var(--backgroundsecondbtn);
   color: var(--colorsecondbtn);
   border: 1px solid var(--colorsecondbtn);
   font-family: "regular";
@@ -763,7 +761,7 @@ input::-webkit-inner-spin-button {
 #toggle .dark {
   display: block;
 }
-#toggle .light {
+ #toggle .light {
   display: none;
 }
 
@@ -781,15 +779,15 @@ input::-webkit-inner-spin-button {
   font-size: 25px;
   transition: 0.25s;
 }
-#toggle .bi-brightness-high{
-  color:#ff8800 !important ;
+#toggle .bi-brightness-high {
+  color: #ff8800 !important ;
 }
-#toggle .bi-moon-fill{
+#toggle .bi-moon-fill {
   color: var(--color-light) !important;
 }
 #toggle:hover .bi-brightness-high,
 #toggle:hover .bi-moon-fill {
-  opacity: .5;
+  opacity: 0.5;
 }
 #logoDark {
   display: none;
@@ -820,6 +818,7 @@ input::-webkit-inner-spin-button {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
   transition: 0.25s all ease;
+  opacity: 0;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
@@ -832,7 +831,7 @@ input::-webkit-inner-spin-button {
 }
 .navbar .dropdown-lang {
   border: 1px solid var(--color-primary);
-  width: 12%;
+  width: 8%;
   border-radius: 8px;
   padding: 5px 0px;
   transition: 0.9s all;
@@ -840,32 +839,36 @@ input::-webkit-inner-spin-button {
 }
 .navbar .dropdown-lang .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: center;
+  padding-right: 9%;
 }
 .navbar .dropdown-lang .lang-menu .content h6,
 .navbar .dropdown-lang .selected-lang .content h6 {
-  font-size: 20px;
+  font-size: 16px;
   color: var(--color-secound);
-  font-family: "regualr";
+  font-family: "regular";
   margin: 0;
   padding-right: 2%;
+}
+.navbar .dropdown-lang .selected-lang .content{
+  display: block;
+ 
+  text-align: center;
 }
 .navbar .dropdown-lang .lang-menu .content h6 span {
   font-family: "light";
   font-size: 12px;
 }
-.navbar .dropdown-lang .lang-menu .content .flag-icon {
-  display: block;
-  width: 28px;
-  height: 18px;
-  margin-bottom: 5px;
-}
 .navbar .dropdown-lang .selected-lang {
   border: 1px solid var(--color-secound);
   border-radius: 10px;
   animation: showtoggle 0.5s linear;
+  background-color: transparent;
+  min-width: 106px;
+  padding: 2px 0;
+
 }
 .navbar .dropdown-lang .selected-lang .dropdown-item {
   margin: 5% 0;
@@ -891,7 +894,7 @@ input::-webkit-inner-spin-button {
 }
 .navbar .dropdown-sign {
   border: 1px solid var(--color-primary);
-  width: 12%;
+  width: 10%;
   border-radius: 8px;
   padding: 8px 4px;
   transition: 0.9s all;
@@ -918,9 +921,13 @@ input::-webkit-inner-spin-button {
   margin: 0;
   padding-right: 2%;
 }
+.navbar .dropdown-sign .selected-sign .content i{
+  color: var(--color-secound);
+}
 .navbar .dropdown-sign .dropdown-menu[data-bs-popper] {
   top: 96%;
   left: -15px;
+  background-color: transparent;
 }
 .navbar .dropdown-sign .sign.show::after {
   border-bottom: 0.3em solid;
@@ -1342,7 +1349,7 @@ footer .slug p {
   background-color: var(--color-seven);
   text-align: center;
   border-radius: 8px;
-  color:var(--color-light) ;
+  color: var(--color-light);
 }
 .data-coplete-tab .kind .nav-pills .nav-item {
   width: 45%;
@@ -1496,7 +1503,7 @@ form .file-upload-wrapper input {
 }
 .sidebar header {
   padding: 1% 2%;
-  background-color:var(--background);
+  background-color: var(--background);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -1913,7 +1920,6 @@ form .file-upload-wrapper input {
   text-align: center;
 }
 .order .show-order .content .header .edit a {
-  
   font-size: 14px;
   font-family: "meduim";
   border-radius: 8px;
@@ -2090,7 +2096,7 @@ form .file-upload-wrapper input {
   height: 38px;
   margin-left: 4%;
 }
-.candidates .tabel-cand tbody button i{
+.candidates .tabel-cand tbody button i {
   color: var(--color-primary);
 }
 /* table */
@@ -2993,7 +2999,7 @@ input[type="number"] {
   justify-content: start;
   align-items: center;
 }
-.table-work .name h6{
+.table-work .name h6 {
   margin-right: 2%;
 }
 .table-work tbody td {
@@ -3072,11 +3078,11 @@ table {
 
 .table-work.table th {
   background-color: rgba(191, 140, 109, 0.1);
-  color:var(--color-primary);
+  color: var(--color-primary);
 }
 
 .table-work.table tbody tr:nth-child(even) {
-  background-color:rgb(143, 146, 161, 0.5);
+  background-color: rgb(143, 146, 161, 0.5);
   color: var(--background2) !important;
 }
 
