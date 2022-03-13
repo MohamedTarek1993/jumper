@@ -155,7 +155,9 @@
     margin-top: 2%;
     margin-bottom: 5%;
   }
+  /* table */
 
+  /* table */
   .page-item .page-link {
     font-size: 10px;
   }
@@ -178,15 +180,15 @@
     left: 23%;
     bottom: -7%;
   }
-  .order  .content .input-group .icon {
+  .order .content .input-group .icon {
     top: 30%;
     right: 2%;
   }
-  .order  .content .input-group .icont{
+  .order .content .input-group .icont {
     top: 80%;
     right: 2%;
-  } 
-  .order .content .new-form .form-step-active .form-select{
+  }
+  .order .content .new-form .form-step-active .form-select {
     margin-bottom: 1%;
   }
   /* finish show order */
@@ -392,14 +394,14 @@
     font-size: 11px;
     margin-bottom: 2%;
   }
-  .order  .content .input-group .icon {
+  .order .content .input-group .icon {
     top: 30%;
     right: 2%;
   }
-  .order  .content .input-group .icont{
+  .order .content .input-group .icont {
     top: 80%;
     right: 2%;
-  } 
+  }
   .order .show-order .adress p {
     width: 89%;
   }
@@ -504,33 +506,35 @@
 }
 @media (max-width: 1000px) {
   /* responsive tabel */
-  .table thead {
+  .table thead ,.candidates .table thead  {
     display: none;
   }
-
-  .table,
-  .table tbody,
-  .table tr,
-  .table td {
+  .table,.candidates
+  .table tbody,.candidates tbody,
+  .table tr,.candidates tr,
+  .table td,.candidates td {
     display: block;
     width: 100%;
   }
-  .table tr {
+  .table tr ,.candidates tr {
     margin-bottom: 15px;
   }
-  .table td {
+  .table td ,.candidates .table td {
     text-align: left !important;
     padding-right: 50%;
     position: relative;
   }
-  .table td::before {
+  .table td::before ,.candidates .table td::before {
     content: attr(data-label);
     position: absolute;
     right: 0;
     width: 31%;
     font-size: 15px;
     text-align: left;
-    color: #bf8c6d;
+    color: black;
+  }
+  .table-work.table tbody tr:nth-child(even){
+    color: white;
   }
   /* responsive tabel */
 }

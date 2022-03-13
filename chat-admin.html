@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>  شات الأدارة </title>
+    <title> شات الأدارة </title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -33,109 +33,108 @@
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
     <!---------------------- start dark && light mood -------------------------------------------->
-    <!-- <div id="toggle">
+    <div id="toggle">
         <span class="light " id="light">
-            <i class="bi bi-brightness-high" style=" color: #ff8800;"></i>
+            <i class="bi bi-brightness-high"></i>
         </span>
         <span class="dark" id="dark">
             <i class="bi bi-moon-fill "></i>
         </span>
-        <div class="indicator">
-        </div>
-    </div> -->
+
+    </div>
     <!---------------------- finish dark && light mood -------------------------------------------->
-   <!---------------------- start navbar -------------------------------------------->
-   <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-        <div class="logo">
-            <a class="navbar-brand" href="index.html"><img id="logoLight" src="image/logo.png" alt="light">
-                <img id="logoDark" src="image/logo-dark.png" alt="dark">
-            </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">من نحن</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="service.html"> الخدمات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"> تواصل معنا</a>
-                </li>
-            </ul>
-            <!-- lang dropdown -->
-            <div class="dropdown dropdown-lang">
-                <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="content">
-                        <h6> العربية</h6>
-                    </div>
+    <!---------------------- start navbar -------------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <div class="logo">
+                <a class="navbar-brand" href="index.html"><img id="logoLight" src="image/logo.png" alt="light">
+                    <img id="logoDark" src="image/logo-dark.png" alt="dark">
                 </a>
-                <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            <div class="content">
-                                <h6>English</h6>
-                            </div>
-                        </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html"> الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"> تواصل معنا</a>
                     </li>
                 </ul>
-            </div>
-            <!-- lang dropdown -->
-            <!-- sign up -->
-            <!-- <div class="btn-sign trans">
+                <!-- lang dropdown -->
+                <div class="dropdown dropdown-lang">
+                    <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="content">
+                            <h6> العربية</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <h6>English</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- lang dropdown -->
+                <!-- sign up -->
+                <!-- <div class="btn-sign trans">
                 <a href="login.html">تسجيل الدخول</a>
             </div> -->
-            <!-- في حالة تم تسجيل الدخول -->
-            <div class="dropdown dropdown-sign">
-                <a class=" dropdown-toggle sign" href="#" role="button" id="dropdownMenuLink5"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="content">
-                        <h6>أحمد ابراهيم</h6>
-                    </div>
-                </a>
-                <ul class="dropdown-menu selected-sign" aria-labelledby="dropdownMenuLink5">
-                    <li>
-                        <a class="dropdown-item" href="account.html">
-                            <div class="content">
-                                <i class="bi bi-person-circle"></i>
-                                <h6>حسابي</h6>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="all-order.html">
-                            <div class="content">
-                                <i class="bi bi-view-list"></i>
-                                <h6>طلباتي</h6>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            <div class="content">
-                                <i class="bi bi-box-arrow-left"></i>
-                                <h6>تسجيل الخروج</h6>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                <!-- في حالة تم تسجيل الدخول -->
+                <div class="dropdown dropdown-sign">
+                    <a class=" dropdown-toggle sign" href="#" role="button" id="dropdownMenuLink5"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="content">
+                            <h6>أحمد ابراهيم</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu selected-sign" aria-labelledby="dropdownMenuLink5">
+                        <li>
+                            <a class="dropdown-item" href="account.html">
+                                <div class="content">
+                                    <i class="bi bi-person-circle"></i>
+                                    <h6>حسابي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="all-order.html">
+                                <div class="content">
+                                    <i class="bi bi-view-list"></i>
+                                    <h6>طلباتي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    <h6>تسجيل الخروج</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- في حالة تم تسجيل الدخول -->
+                <!-- sign up -->
             </div>
-            <!-- في حالة تم تسجيل الدخول -->
-            <!-- sign up -->
         </div>
-    </div>
-</nav>
-<!---------------------- finish navbar -------------------------------------------->
+    </nav>
+    <!---------------------- finish navbar -------------------------------------------->
     <!---------------------- start order -------------------------------------------->
     <section class="order">
         <div class="container">
@@ -225,13 +224,13 @@
                     </h2>
                     <div class="contact-pepole">
                         <div class="pepole">
-                          
+
                             <ul>
                                 <li class="active">
                                     <img src="image/logo-chat.png" alt="chat">
                                     <h6> إدارة جمبرز</h6>
                                 </li>
-                            
+
                             </ul>
                         </div>
                     </div>
@@ -290,7 +289,7 @@
                                         <div class="sp"></div>
                                     </div>
 
-                                    <div class="chat-r" >
+                                    <div class="chat-r">
                                         <div class="sp"></div>
                                         <div class="mess mess-r">
                                             <p>
@@ -302,7 +301,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="chat-l" >
+                                    <div class="chat-l">
                                         <div class="mess">
                                             <p>الحمد لله ماشية</p>
                                             <div class="check">
@@ -356,7 +355,7 @@
                                         </div>
                                         <div class="sp"></div>
                                     </div>
-                                    <div class="chat-r" >
+                                    <div class="chat-r">
                                         <div class="sp"></div>
                                         <div class="mess mess-r">
                                             <p>

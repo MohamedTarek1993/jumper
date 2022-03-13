@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order</title>
+    <title>جاري الانتظار</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -17,9 +17,6 @@
     <!-- dark mood -->
     <link rel="stylesheet" href="css/style-dark.css">
     <!-- dark mood -->
-    <!-- flag icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" />
-    <!-- flag icon -->
     <!-- animation -->
     <link rel="stylesheet" href="css/aos-anmite.css" />
     <!-- animation -->
@@ -45,7 +42,7 @@
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
     <!---------------------- start dark && light mood -------------------------------------------->
-    <div id="toggle">
+     <div id="toggle">
         <span class="light " id="light">
             <i class="bi bi-brightness-high" style=" color: yellow;"></i>
         </span>
@@ -54,7 +51,7 @@
         </span>
         <div class="indicator">
         </div>
-    </div>
+    </div> 
     <!---------------------- finish dark && light mood -------------------------------------------->
     <!---------------------- start navbar -------------------------------------------->
     <nav class="navbar navbar-expand-lg ">
@@ -89,24 +86,14 @@
                     <a class=" dropdown-toggle lang-menu" href="#" role="button" id="dropdownMenuLink5"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="content">
-                            <span class="flag-icon flag-icon-sa flag-icon-squared"></span>
-                            <h6 href="#"> KSA</h6>
+                            <h6> العربية</h6>
                         </div>
                     </a>
                     <ul class="dropdown-menu selected-lang" aria-labelledby="dropdownMenuLink5">
                         <li>
                             <a class="dropdown-item" href="#">
                                 <div class="content">
-                                    <span class="flag-icon flag-icon-us flag-icon-squared"></span>
                                     <h6>English</h6>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                <div class="content">
-                                    <span class="flag-icon flag-icon-tr flag-icon-squared"></span>
-                                    <h6 href="#"> Turkish</h6>
                                 </div>
                             </a>
                         </li>
@@ -114,10 +101,45 @@
                 </div>
                 <!-- lang dropdown -->
                 <!-- sign up -->
-                <div class="btn-sign trans">
+                <!-- <div class="btn-sign trans">
                     <a href="login.html">تسجيل الدخول</a>
+                </div> -->
+                <!-- في حالة تم تسجيل الدخول -->
+                <div class="dropdown dropdown-sign">
+                    <a class=" dropdown-toggle sign" href="#" role="button" id="dropdownMenuLink5"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="content">
+                            <h6>أحمد ابراهيم</h6>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu selected-sign" aria-labelledby="dropdownMenuLink5">
+                        <li>
+                            <a class="dropdown-item" href="account.html">
+                                <div class="content">
+                                    <i class="bi bi-person-circle"></i>
+                                    <h6>حسابي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="all-order.html">
+                                <div class="content">
+                                    <i class="bi bi-view-list"></i>
+                                    <h6>طلباتي</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <div class="content">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    <h6>تسجيل الخروج</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
+                <!-- في حالة تم تسجيل الدخول -->
                 <!-- sign up -->
             </div>
         </div>
@@ -144,12 +166,12 @@
                                 </a>
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="account.html">
                                     <i class="bi bi-person-circle"></i>
                                     حسابي
                                 </a>
                             </li>
-                            <li class="side-item  ">
+                            <li class="side-item">
                                 <button class="dropdown-btn btn actives ">
                                     <i class="bi bi-view-list"></i>
                                     الطلبات
@@ -159,15 +181,15 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="order.html">انشاء طلب جديد</a>
+                                    <a class="side-link" href="create-order.html">انشاء طلب جديد</a>
                                     <a class="side-link active" href="all-order.html">كل الطلبات </a>
-                                    <a class="side-link" href="#">الطلبات الجديدة</a>
-                                    <a class="side-link" href="#">الطلبات المنتهية</a>
+                                    <a class="side-link" href="new-order.html">الطلبات الجديدة</a>
+                                    <a class="side-link" href="old-order.html">الطلبات المنتهية</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="#">
+                                <a class="side-link" href="favourit.html">
                                     <i class="bi bi-heart"></i>
                                     المفضلة
                                 </a>
@@ -182,8 +204,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="#"> تواصل مع الادارة</a>
-                                    <a class="side-link" href="#"> غرف الدردشة</a>
+                                    <a class="side-link" href="chat-admin.html"> تواصل مع الادارة</a>
+                                    <a class="side-link" href="chat-room.html"> غرف الدردشة</a>
 
                                 </div>
                                 <!-- drop-menu -->
@@ -198,8 +220,8 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link" href="#"> الموظفين الحاليين </a>
-                                    <a class="side-link" href="#"> الموظفين السابقين</a>
+                                    <a class="side-link" href="clerk.html"> الموظفين الحاليين </a>
+                                    <a class="side-link" href="ex-clerk.html"> الموظفين السابقين</a>
                                 </div>
                                 <!-- drop-menu -->
                             </li>
@@ -220,7 +242,7 @@
                                 <h6>مصممين واجهة مستخدم لانشاء عدة تطبيقات ومواقع
                                     باستخدام </h6>
                                 <div class="edit">
-                                    <a href="edit-order.html">
+                                    <a class="btn first" href="edit-order.html">
                                         <i class="bi bi-pencil"></i>
                                         تعديل
                                     </a>
@@ -236,42 +258,41 @@
                             <ul>
                                 <li>
                                     <p>
-                                        <img src="image/img10.png" alt="detials">
+                                        <i class="bi bi-calendar"></i>
                                         <span>تاريخ العمل</span>
                                         : فبراير 22 - 22مارس
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img9.png" alt="detials">
+                                        <i class="bi bi-clock"></i>
                                         <span>مدة العمل</span>
                                         : شهرين
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img6.png" alt="detials">
-                                        <span> نوع الدوام</span>
+                                        <i class="bi bi-briefcase"></i>                                        <span> نوع الدوام</span>
                                         : دوام منتظم
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img9.png" alt="detials">
+                                        <i class="bi bi-clock"></i>
                                         <span> وقت الدوام</span>
                                         : صباحا 8 - 4مساءا
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img8.png" alt="detials">
+                                        <i class="bi bi-credit-card"></i>
                                         <span> نوع الحساب</span>
                                         : الحساب بالساعة
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img11.png" alt="detials">
+                                        <i class="bi bi-cash"></i>
                                         <span> التكلفة المفترضة</span>
                                         : 15ريال بالساعة
                                 </li>
@@ -282,35 +303,35 @@
                             <ul>
                                 <li>
                                     <p>
-                                        <img src="image/img2.png" alt="detials">
+                                        <i class="bi bi-bezier"></i>
                                         <span> عدد الجمبر</span>
                                         : 100
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img3.png" alt="detials">
+                                        <i class="bi bi-globe2"></i>
                                         <span>الجنسية </span>
                                         : مصرية
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img4.png" alt="detials">
+                                        <i class="bi bi-gender-ambiguous"></i>
                                         <span> النوع</span>
                                         : ذكور 10 - 10 إناث
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img12.png" alt="detials">
+                                        <i class="bi bi-person-bounding-box"></i>
                                         <span> العمر</span>
                                         : 25 - 35
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        <img src="image/img6.png" alt="detials">
+                                        <i class="bi bi-briefcase"></i>   
                                         <span> نوع العمل</span>
                                         : التصميم
                                     </p>
@@ -359,24 +380,26 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                     aria-labelledby="pills-home-tab">
-                                    <table class="tabel-cand table-responsive">
+                                    <table class="tabel-cand table-responsive table">
                                         <thead>
                                             <tr>
-                                                <td>#</td>
-                                                <td>رقم الموظف</td>
-                                                <td>أسم الموظف</td>
-                                                <td>الجنسية</td>
-                                                <td>المهنة</td>
-                                                <td>العنوان</td>
-                                                <td>الحالة</td>
+                                                <th>#</th>
+                                                <th>رقم الموظف</th>
+                                                <th>أسم الموظف</th>
+                                                <th>الجنسية</th>
+                                                <th>المهنة</th>
+                                                <th>العنوان</th>
+                                                <th>الحالة</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <!-- في حالة موظف جديد -->
-                                                <td data-label="No">1</td>
+
+                                                <td data-label="#">1</td>
                                                 <td data-label="رقم الموظف">
-                                                    #251422</td>
+                                                    #251422
+                                                </td>
                                                 <td data-label="أسم الموظف">
                                                     <img src="image/cand1.png" alt="clerk">
                                                     أحمد السيد
@@ -390,26 +413,30 @@
                                                 <td data-label="الحالة">
                                                     <span class="new case">مرشح جديد</span>
                                                 </td>
-                                                <td><button type="button" class="btn" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal-1">
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal-1">
                                                         <i class="bi bi-three-dots"></i>
                                                     </button></td>
                                                 <!-- في حالة موظف جديد -->
                                             </tr>
                                             <tr>
                                                 <!-- في حالة موظف مقبول -->
-                                                <td data-label="S.No">1</td>
-                                                <td data-label="Name.Code">#251422</td>
-                                                <td data-label="Name">
-                                                    <img src="image/cand2.png" alt="clerk">
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
+                                                    <img src="image/cand1.png" alt="clerk">
                                                     أحمد السيد
                                                 </td>
-                                                <td data-label="Age">مصري</td>
-                                                <td data-label="Marks%">جرافيك ديزاينر</td>
-                                                <td data-label="Adress%">.....الرياض , شارع السيدة عائشة , الدور الاول
-                                                </td>
-                                                <td data-label="Staus"><span class="success case"> مقبول</span></td>
-                                                <td data-label="Butt"><button type="button" class="btn"
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة"><span class="success case"> مقبول</span></td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
                                                         data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                         <i class="bi bi-three-dots"></i>
                                                     </button> </td>
@@ -417,18 +444,22 @@
                                             </tr>
                                             <tr>
                                                 <!-- في حالة موظف مرفوض -->
-                                                <td data-label="S.No">1</td>
-                                                <td data-label="Name.Code">#251422</td>
-                                                <td data-label="Name">
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
                                                     <img src="image/cand1.png" alt="clerk">
                                                     أحمد السيد
                                                 </td>
-                                                <td data-label="Age">مصري</td>
-                                                <td data-label="Marks%">جرافيك ديزاينر</td>
-                                                <td data-label="Adress%">.....الرياض , شارع السيدة عائشة , الدور الاول
-                                                </td>
-                                                <td data-label="Staus"> <span class="reject case"> مرفوض</span> </td>
-                                                <td data-label="Butt"><button type="button" class="btn"
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة"> <span class="reject case"> مرفوض</span> </td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
                                                         data-bs-toggle="modal" data-bs-target="#exampleModal-1">
                                                         <i class="bi bi-three-dots"></i>
                                                     </button></td>
@@ -439,88 +470,177 @@
                                 </div>
                                 <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                     aria-labelledby="pills-profile-tab">
-                                    <table class="tabel-cand table-responsive">
+                                    <table class="tabel-cand table-responsive table">
                                         <thead>
                                             <tr>
-                                                <td>#</td>
-                                                <td>رقم الموظف</td>
-                                                <td>أسم الموظف</td>
-                                                <td>الجنسية</td>
-                                                <td>المهنة</td>
-                                                <td>العنوان</td>
-                                                <td>الحالة</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <!-- في حالة موظف مقبول -->
-                                                <td>1</td>
-                                                <td>#251422</td>
-                                                <td>
-                                                    <img src="image/cand2.png" alt="clerk">
-                                                    أحمد السيد
-                                                </td>
-                                                <td>مصري</td>
-                                                <td>جرافيك ديزاينر</td>
-                                                <td>.....الرياض , شارع السيدة عائشة , الدور الاول</td>
-                                                <td><span class="success case"> مقبول</span></td>
-                                                <td><button type="button" class="btn" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">
-                                                        <i class="bi bi-three-dots"></i>
-                                                    </button> </td>
-                                                <!-- في حالة موظف مقبول -->
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                    aria-labelledby="pills-contact-tab">
-                                    <table class="tabel-cand table-responsive">
-                                        <thead>
-                                            <tr>
-                                                <td>#</td>
-                                                <td>رقم الموظف</td>
-                                                <td>أسم الموظف</td>
-                                                <td>الجنسية</td>
-                                                <td>المهنة</td>
-                                                <td>العنوان</td>
-                                                <td>الحالة</td>
+                                                <th>#</th>
+                                                <th>رقم الموظف</th>
+                                                <th>أسم الموظف</th>
+                                                <th>الجنسية</th>
+                                                <th>المهنة</th>
+                                                <th>العنوان</th>
+                                                <th>الحالة</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <!-- في حالة موظف جديد -->
-                                                <td>1</td>
-                                                <td>#251422</td>
-                                                <td>
+
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
                                                     <img src="image/cand1.png" alt="clerk">
                                                     أحمد السيد
                                                 </td>
-                                                <td>مصري</td>
-                                                <td>جرافيك ديزاينر</td>
-                                                <td>.....الرياض , شارع السيدة عائشة , الدور الاول</td>
-                                                <td><span class="new case">مرشح جديد</span></td>
-                                                <td><button type="button" class="btn" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal-1">
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة">
+                                                    <span class="new case">مرشح جديد</span>
+                                                </td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal-1">
                                                         <i class="bi bi-three-dots"></i>
                                                     </button></td>
                                                 <!-- في حالة موظف جديد -->
                                             </tr>
                                             <tr>
-                                                <!-- في حالة موظف مرفوض -->
-                                                <td>1</td>
-                                                <td>#251422</td>
-                                                <td>
+                                                <!-- في حالة موظف مقبول -->
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
                                                     <img src="image/cand1.png" alt="clerk">
                                                     أحمد السيد
                                                 </td>
-                                                <td>مصري</td>
-                                                <td>جرافيك ديزاينر</td>
-                                                <td>.....الرياض , شارع السيدة عائشة , الدور الاول</td>
-                                                <td> <span class="reject case"> مرفوض</span> </td>
-                                                <td><button type="button" class="btn" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal-1">
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة"><span class="success case"> مقبول</span></td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        <i class="bi bi-three-dots"></i>
+                                                    </button> </td>
+                                                <!-- في حالة موظف مقبول -->
+                                            </tr>
+                                            <tr>
+                                                <!-- في حالة موظف مرفوض -->
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
+                                                    <img src="image/cand1.png" alt="clerk">
+                                                    أحمد السيد
+                                                </td>
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة"> <span class="reject case"> مرفوض</span> </td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                                                        <i class="bi bi-three-dots"></i>
+                                                    </button></td>
+                                                <!-- في حالة موظف مرفوض -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <table class="tabel-cand table-responsive table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>رقم الموظف</th>
+                                                <th>أسم الموظف</th>
+                                                <th>الجنسية</th>
+                                                <th>المهنة</th>
+                                                <th>العنوان</th>
+                                                <th>الحالة</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <!-- في حالة موظف جديد -->
+
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
+                                                    <img src="image/cand1.png" alt="clerk">
+                                                    أحمد السيد
+                                                </td>
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة">
+                                                    <span class="new case">مرشح جديد</span>
+                                                </td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                                                        <i class="bi bi-three-dots"></i>
+                                                    </button></td>
+                                                <!-- في حالة موظف جديد -->
+                                            </tr>
+                                            <tr>
+                                                <!-- في حالة موظف مقبول -->
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
+                                                    <img src="image/cand1.png" alt="clerk">
+                                                    أحمد السيد
+                                                </td>
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة"><span class="success case"> مقبول</span></td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        <i class="bi bi-three-dots"></i>
+                                                    </button> </td>
+                                                <!-- في حالة موظف مقبول -->
+                                            </tr>
+                                            <tr>
+                                                <!-- في حالة موظف مرفوض -->
+                                                <td data-label="#">1</td>
+                                                <td data-label="رقم الموظف">
+                                                    #251422
+                                                </td>
+                                                <td data-label="أسم الموظف">
+                                                    <img src="image/cand1.png" alt="clerk">
+                                                    أحمد السيد
+                                                </td>
+                                                <td data-label="الجنسية">
+                                                    مصري</td>
+                                                <td data-label="الوظيفة">
+                                                    جرافيك ديزاينر</td>
+                                                <td data-label="العنوان">
+                                                    .....الرياض , شارع السيدة عائشة , الدور الاول</td>
+                                                <td data-label="الحالة"> <span class="reject case"> مرفوض</span> </td>
+                                                <td data-label="عرض التفاصيل"><button type="button" class="btn"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal-1">
                                                         <i class="bi bi-three-dots"></i>
                                                     </button></td>
                                                 <!-- في حالة موظف مرفوض -->
