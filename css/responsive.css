@@ -63,6 +63,9 @@
   .form .form-step-active .input-group .icons {
     top: 13%;
   }
+  .form .form-step-active .input-group .icons{
+
+  }
   /* finish conform form */
   /* start data complete */
   .data-coplete-tab .tab-content .first-tab h2 {
@@ -187,6 +190,12 @@
   .order .content .input-group .icont {
     top: 80%;
     right: 2%;
+  }
+  .order .content .input-group .icons{
+    top: 23%;
+  }
+  .order .content .input-group .iconx{
+    top: 57%;
   }
   .order .content .new-form .form-step-active .form-select {
     margin-bottom: 1%;
@@ -506,15 +515,18 @@
 }
 @media (max-width: 1000px) {
   /* responsive tabel */
-  .table thead ,.candidates .table thead  {
+  .table thead ,.candidates .table thead ,.all-order .table thead  {
     display: none;
   }
-  .table,.candidates
-  .table tbody,.candidates tbody,
-  .table tr,.candidates tr,
-  .table td,.candidates td {
+  .table,.candidates ,.all-order .table,
+  .table tbody,.candidates tbody, .all-order .table tbody,
+  .table tr,.candidates tr,.all-order .table tr,
+  .table td,.candidates td,.all-order .table td {
     display: block;
-    width: 100%;
+    width: 97%;
+  }
+  .all-order .table tbody tr{
+    border: none;
   }
   .table tr ,.candidates tr {
     margin-bottom: 15px;

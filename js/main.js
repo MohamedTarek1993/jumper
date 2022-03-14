@@ -62,9 +62,7 @@ const disableDarkMode = () => {
   dark.style.display = "block";
   // 3. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
-  
 }
-
 // If the user already visited and enabled darkMode
 // start things off with it on
 if (darkMode === 'enabled') {
@@ -85,6 +83,7 @@ darkModeToggle.addEventListener('click', () => {
   if (darkMode !== 'enabled') {
     enableDarkMode();
     // if it has been enabled, turn it off  
+    // change logo 
     logoLight.style.display = "none";
     logoDark.style.display = "block";
     //  dark.style.display="block";
